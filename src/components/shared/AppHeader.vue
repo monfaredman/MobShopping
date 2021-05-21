@@ -1,12 +1,12 @@
 <template>
-<div style="height:93px;position:fixed;z-index:299" class="w-100">
-    <nav class="navbar navbar-expand-lg" style="height:93px" >
-      <router-link to="/">
-      <a href="#" class="navbar-brand">
-        <i class="fab fa-android fa-5x"></i>
-        <h5 style="margin-top: -27px;">MobileShop</h5>
-      </a>
-      </router-link>
+  <div class="header">
+    <nav class="navbar-header navbar navbar-expand-lg">
+      <div class="brand-header">
+        <router-link to="/">
+          <li><i class="fab fa-android "></i></li>
+          <h5>MobileShop</h5>
+        </router-link>
+      </div>
 
       <button
         class="navbar-toggler"
@@ -19,56 +19,64 @@
         </span>
       </button>
 
+      <div class=" collapse navbar-collapse" id="Navbar">
+        <div class="menue-header">
+          <div class="navbar-nav mx-auto">
+            <div class="dropdown nav-item nav-item-mobile">
+              <router-link to="/mobile">
+                <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+                  >موبایل</a
+                >
+              </router-link>
 
-      <div class="collapse navbar-collapse" id="Navbar">
-        <ul class="navbar-nav mx-auto">
+              <ul class="dropdown-menu ">
+                <router-link to="/apple">
+                  <li class="dropdown-item">
+                    <a class="btn nav-link " data-toggle="dropdown">اپل</a>
+                  </li></router-link
+                >
 
+                <router-link to="/samsong">
+                  <li class="dropdown-item">
+                    <a class="nav-link btn" data-toggle="dropdown">سامسونگ</a>
+                  </li></router-link
+                >
+              </ul>
+            </div>
 
-  
-  <li class="dropdown nav-item" style="border-left:1px solid black">
-            <router-link to="/mobile">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown">موبایل</a>
-            </router-link>
-          
-          
-          <ul class="dropdown-menu">
-             <router-link to="/apple">
-            <li class="text-right dropdown-item">
-            <a class="btn nav-link1 " data-toggle="dropdown">اپل</a>
-              </li></router-link>
-            
-           
-<router-link to="/samsong">
-            <li class="text-right dropdown-item">
-               
-            <a class="nav-link2 btn" data-toggle="dropdown">سامسونگ</a>
-            </li></router-link>
-            
+            <div class="dropdown nav-item nav-item-janebi">
+              <router-link to="/janebi">
+                <a
+                  class="nav-link dropdown-toggle dropdown-toggle2"
+                  data-toggle="dropdown"
+                  >لوازم جانبی</a
+                >
+              </router-link>
 
-          </ul>
-       </li>
-         
-<li class="dropdown nav-item" style="border-right:1px solid black">
-            <router-link to="/janebi">
-            <a class="nav-link dropdown-toggle" data-toggle="dropdown">لوازم جانبی</a>
-            </router-link>
-          
-          
-          <ul class="dropdown-menu">
-            <li><a href="" class="dropdown-item text-right ">کیف و کاور گوشی</a></li>
-            <li><a href="" class="dropdown-item text-right ">پاور بانک (شارژر همراه)</a></li>
-            <li><a href="" class="dropdown-item text-right ">پایه نگهدارنده گوشی</a></li>
-          </ul>
-       </li>
+              <ul class="dropdown-menu dropdown-menu2">
+                <li>
+                  <a href="" class="dropdown-item ">کیف و کاور گوشی</a>
+                </li>
+                <li>
+                  <a href="" class="dropdown-item ml-2">پاور بانک </a>
+                </li>
+                <li>
+                  <a href="" class="dropdown-item">پایه نگهدارنده گوشی</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
 
-        </ul>
-        <!-- social -->
-
-        <div class="nav-icons d-none d-lg-block">
+        <div class="social-header">
           <a href="https://www.instagram.com/" target="_blank" class="nav-icon">
             <i class="fab fa-instagram fa-2x"></i>
           </a>
-          <a href="https://web.telegram.org/#/login" class="nav-icon" target="_blank">
+          <a
+            href="https://web.telegram.org/#/login"
+            class="nav-icon"
+            target="_blank"
+          >
             <i class="fab fa-telegram fa-2x"></i>
           </a>
           <a href="https://telegram.com/" target="_blank" class="nav-icon">
@@ -79,9 +87,8 @@
           </a>
         </div>
       </div>
-      <!-- end social -->
     </nav>
-</div>
+  </div>
 </template>
 
 <script>
@@ -89,20 +96,7 @@ export default {};
 </script>
 
 <style>
-a{
-   text-decoration: none !important;
+a {
+  text-decoration: none !important;
 }
-ul li.nav-item {
-  border-top: 1px solid;
-  border-bottom: 1px solid;
-  border-radius: 3px;
-  padding: 0px 32px 0px 32px;
-  border-color: aqua;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;
-  }
-  
 </style>
-

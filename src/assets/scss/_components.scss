@@ -1,0 +1,597 @@
+@import "base";
+
+// start header
+
+div.brand-header {
+  width: 126px;
+  margin: auto auto;
+  height: 84px;
+
+
+  li {
+    font-size: 90px;
+    height: 70px;
+    list-style: none;
+    text-align: center;
+    line-height: 0px;
+    margin: -10px auto;
+    a{
+      text-decoration: none;
+    }
+  }
+  h5 {
+    color: $color-one;
+    text-align: center;
+    margin: 9px auto;
+  }
+}
+
+div.menue-header {
+  width: 205px;
+  margin: auto;
+
+  .nav-item-mobile {
+    border-left: 1px solid black;
+    margin: 0px 0px -8px 8px;
+    white-space: nowrap;
+    a.dropdown-toggle {
+      font-size: 22px !important;
+      font-family: "Samim" !important;
+      font-weight: 900 !important;
+        text-decoration: none;
+    }
+    .dropdown-menu {
+      top: 79%;
+      left: -62px;
+      min-width: 65px;
+      padding: 3px;
+      margin: 0px 0px 0px;
+      font-size: 0rem;
+      color: #212529;
+      text-align: center;
+      list-style: none;
+      background-color: #a0c8f0a3;
+      border: 1px solid #d7d7d7;
+      border-radius: 0.25rem;
+
+      a.nav-link {
+        width: 62px !important;
+        font-size: 14px !important;
+        font-family: "Shabnam" !important;
+        font-weight: 100;
+        text-align: center !important;
+        height: 33px !important;
+        margin: auto auto !important;
+        line-height: 25px;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .nav-item-janebi {
+    margin: auto -6px;
+    padding: 0px 0px;
+    white-space: nowrap;
+
+    a.dropdown-toggle2 {
+      font-size: 22px !important;
+      font-family: "Samim" !important;
+      text-decoration: none;
+      font-weight: 900 !important;
+    }
+
+    .dropdown-menu2 {
+      top: 104%;
+      left: -42px;
+      min-width: 149px;
+      padding: 3px;
+      margin: 0px 0px 0px;
+      color: #212529;
+      text-align: center;
+      list-style: none;
+      background-color: #a0c8f0a3;
+      border: 1px solid #d7d7d7;
+      border-radius: 0.25rem;
+    }
+    a {
+      width: 136px !important;
+      font-size: 14px !important;
+      font-family: "Shabnam" !important;
+      font-weight: 100;
+      text-align: center !important;
+      height: 33px !important;
+      margin: 0px auto !important;
+      line-height: 25px;
+      text-decoration: none;
+    }
+  }
+}
+
+div.social-header a {
+  font-size: 12px !important;
+  color: red !important;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+// end header
+
+
+
+
+// start appBanner
+div.carousel{
+  margin-top: 92px;
+  .carousel-indicators li {
+    position: relative;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 9px;
+    height: 10px;
+    margin-right: 3px;
+    margin-left: 3px;
+    border-radius: 50px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(255,255,255,.5);
+}
+.carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  z-index: 15;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 18%;
+  list-style: none;
+}
+}
+// end appBanner
+
+
+// start AppSection1
+div.boxing-section1{
+  background-color: gray;
+  margin: 20px auto;
+  text-align: center;
+  ul{
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    li{
+      width: 309px;
+      height: 300px;
+      border: 2px solid white;
+      list-style: none;
+      padding: 21px 0px;
+      margin: 27px 63px;
+      border-radius: 10px;
+      background-color: white;
+      h3{
+        font-family: Shabnam;
+        font-size: 29px;
+        font-weight: 900;
+      }
+      img{
+        width: 284px;
+        height: 226px;
+      }
+
+
+    }
+  }
+
+}
+
+// end AppSection1
+
+
+
+//start AppSection8
+div.newest-section{
+  margin: 20px auto;
+  width: 100%;
+  background-color: rgb(177, 177, 184);
+  .newest-title{
+    background-color: rgb(245, 202, 202);
+    width: 100%;
+    text-align: center;
+  p{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+  }
+  img{
+    width: 63px;
+    height: 62px;
+    margin: auto 10px auto auto;
+    transform: rotate(
+44deg
+);
+  }
+  }
+  .newest-cards{
+    display: flex;
+    justify-content: center;
+    margin: auto auto;
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+  .card{
+    background-color: #65e9e9;
+    border: 2px solid red;
+    margin: 10px 10px;
+    border-radius: 10px;
+    top: 0px;
+    position: relative;
+
+
+
+
+
+
+
+  .card-header{
+    background-color: #d7d7d7;
+    padding: 0px;
+    text-align: center;
+    border: none;
+    border-radius: 0px;
+  }
+  .card-body{
+    background-color: #945555;
+    white-space: nowrap;
+    padding: 12px 0px;
+    border: none;
+    border-radius: 0px;
+  h6{
+    font-size: 17px;
+    font-weight: 400;
+    color: yellow;
+    font-family: 'Font Awesome 5 Brands';
+    margin: auto auto;
+    text-align: center;
+  }
+  }
+  .card-footer{
+    background-color: #290909;
+    padding: 20px 0px;
+    border: none;
+    border-radius: 0px;
+
+ h5{
+  color: red;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+ }
+}
+  }
+  }
+}
+.card:hover{
+  box-shadow: 0px 0px 10px 3px #b8b6b68f;    transform: scale(1.01);
+}
+//end AppSection8
+
+
+
+
+
+//start AppSection2
+div.bag-section{
+  margin: 20px auto;
+  width: 100%;
+  background-color: rgb(177, 177, 184);
+  .bag-title{
+    background-color: rgb(245, 202, 202);
+    width: 100%;
+    text-align: center;
+  p{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+  }
+  img{
+    width: 63px;
+    height: 62px;
+    margin: auto 10px auto auto;
+  }
+  }
+  .bag-cards{
+    display: flex;
+    justify-content: center;
+    margin: auto auto;
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+  .card{
+    background-color: #65e9e9;
+    border: 2px solid red;
+    margin: 10px 10px;
+    border-radius: 10px;
+    top: 0px;
+    position: relative;
+  .card-header{
+    background-color: #d7d7d7;
+    padding: 0px;
+    text-align: center;
+    border: none;
+    border-radius: 0px;
+  }
+  .card-body{
+    background-color: #945555;
+    padding: 12px 0px;
+    border: none;
+    border-radius: 0px;
+  h6{
+    font-size: 12px;
+    font-weight: 100;
+    color: yellow;
+    font-family: 'Font Awesome 5 Brands';
+    margin: auto auto;
+    text-align: center;
+  }
+  }
+  .card-footer{
+    background-color: #290909;
+    padding: 20px 0px;
+    border: none;
+    border-radius: 0px;
+
+ h5{
+  color: red;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+ }
+}
+  }
+  }
+}
+.card:hover{
+  box-shadow: 0px 0px 10px 3px #b8b6b68f;    transform: scale(1.01);
+}
+
+
+//end AppSection2
+
+
+
+//start AppSection6
+div.multipleS-section{
+
+
+  .controls-top{
+
+.first-control{
+  position: absolute;
+  top: 103px;
+  left: -92px;
+  font-size: 30px;
+  text-align: left;
+}
+.second-control{
+  position: absolute;
+  top: 103px;
+  left: 1187px;
+  font-size: 30px;
+}
+  }
+  .carousel-indicators{
+    top: 250px;
+    padding: 0px;
+    li{
+      background-color: #bcb2b269;
+      margin: 0px 5px;
+
+    }
+  }
+  .carousel-inner{
+
+  }
+
+}
+li:focus{
+  background-color: #ff000069;
+
+}
+
+
+//end AppSection6
+
+
+
+//start AppSection3
+
+div.Bestselling-section{
+  margin: 20px auto;
+  width: 100%;
+  background-color: rgb(177, 177, 184);
+  .Bestselling-title{
+    background-color: rgb(245, 202, 202);
+    width: 100%;
+    text-align: center;
+  p{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+  }
+  img{
+    width: 63px;
+    height: 62px;
+    margin: auto 10px auto auto;
+  }
+  }
+  .Bestselling-cards{
+    display: flex;
+    justify-content: center;
+    margin: auto auto;
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+  .card{
+    background-color: #65e9e9;
+    border: 2px solid red;
+    margin: 10px 10px;
+    border-radius: 10px;
+    top: 0px;
+    position: relative;
+  .card-header{
+    background-color: #d7d7d7;
+    padding: 0px;
+    text-align: center;
+    border: none;
+    border-radius: 0px;
+  }
+  .card-body{
+    background-color: #945555;
+    padding: 12px 0px;
+    border: none;
+    border-radius: 0px;
+  h6{
+    font-size: 12px;
+    font-weight: 100;
+    color: yellow;
+    font-family: 'Font Awesome 5 Brands';
+    margin: auto auto;
+    text-align: center;
+  }
+  }
+  .card-footer{
+    background-color: #290909;
+    padding: 20px 0px;
+    border: none;
+    border-radius: 0px;
+
+ h5{
+  color: red;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+ }
+}
+  }
+  }
+}
+.card:hover{
+  box-shadow: 0px 0px 10px 3px #b8b6b68f;    transform: scale(1.01);
+}
+//end AppSection3
+
+
+
+//start AppSection4
+div.H-section{
+  margin: 20px auto;
+  width: 100%;
+  background-color: rgb(177, 177, 184);
+  .H-title{
+    background-color: rgb(245, 202, 202);
+    width: 100%;
+    text-align: center;
+  p{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+  }
+  img{
+    width: 63px;
+    height: 62px;
+    margin: auto 10px auto auto;
+  }
+  }
+  .H-cards{
+    display: flex;
+    justify-content: center;
+    margin: auto auto;
+    width: 95%;
+    background-color: rgb(255, 255, 255);
+  .card{
+    background-color: #65e9e9;
+    border: 2px solid red;
+    margin: 10px 10px;
+    border-radius: 10px;
+    top: 0px;
+    position: relative;
+  .card-header{
+    background-color: #d7d7d7;
+    padding: 0px;
+    text-align: center;
+    border: none;
+    border-radius: 0px;
+  }
+  .card-body{
+    background-color: #945555;
+    padding: 12px 0px;
+    border: none;
+    border-radius: 0px;
+  h6{
+    font-size: 12px;
+    font-weight: 100;
+    color: yellow;
+    font-family: 'Font Awesome 5 Brands';
+    margin: auto auto;
+    text-align: center;
+  }
+  }
+  .card-footer{
+    background-color: #290909;
+    padding: 20px 0px;
+    border: none;
+    border-radius: 0px;
+
+ h5{
+  color: red;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+ }
+}
+  }
+  }
+}
+.card:hover{
+  box-shadow: 0px 0px 10px 3px #b8b6b68f;    transform: scale(1.01);
+}
+
+//end AppSection4
+
+
+
+//start AppSection5
+div.question-section{
+  display: flex;
+  justify-content: center;
+  .question-item {
+    background: #fcfcfcf3;
+    padding: 3rem;
+    border: 1px solid rebeccapurple;
+    border-radius: 9px;
+    margin: 30px;
+    .question-icon {
+      font-size: 6rem;
+      margin: 30px;
+      transition: all 0.5s ease-in-out;
+    }
+    h5 {
+      color: blue;
+    }
+  }
+}
+.question-icon:hover {
+  transform: translateY(-15%);
+}
+
+
+//end AppSection5
+
+
+

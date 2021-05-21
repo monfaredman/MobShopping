@@ -1,6 +1,5 @@
 <template>
-
-  <div id="carouselExampleDark" class="carousel  slide" data-ride="carousel" >
+  <div id="carouselExampleDark" class="carousel  slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <li
         data-target="#carouselExampleDark"
@@ -22,8 +21,9 @@
         /></a>
         <div class="carousel-caption d-none d-md-block">
           <a href="" style="text-decoration:none;color:white">
-            <h4 class=" d-inline-block">Iphone 12 pro max</h4><br>
-            <p class=" d-inline-block ml-5">سریع انفجار کن</p>
+            <h4 class=" d-inline-block">Iphone 12 pro max</h4>
+            <br />
+            <p class="">سریع انفجار کن</p>
           </a>
         </div>
       </div>
@@ -35,8 +35,8 @@
           alt="Second slide"
         />
         <div class="carousel-caption d-none d-md-block">
-          <h5>Second slide label</h5>
-          <p>Some representative placeholder content for the second slide.</p>
+          <h5>Iphone 12 pro max</h5>
+          <p>سریع انفجار کن</p>
         </div>
       </div>
       <div class="carousel-item" alt="Third slide">
@@ -46,8 +46,8 @@
           alt="Third slide"
         />
         <div class="carousel-caption d-none d-md-block">
-          <h5>Third slide label</h5>
-          <p>Some representative placeholder content for the third slide.</p>
+          <h5>Iphone 12 pro max</h5>
+          <p>سریع انفجار کن</p>
         </div>
       </div>
     </div>
@@ -70,7 +70,6 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-
 </template>
 
 <script>

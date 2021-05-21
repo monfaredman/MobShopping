@@ -1,125 +1,137 @@
 <template>
-  <div class="container vueper">
-    <vueper-slides
-      class="no-shadow"
-      :visible-slides="3"
-      slide-multiple
-      :gap="3"
-      :slide-ratio="1 / 4"
-      :dragging-distance="200"
-      :breakpoints="{ 1200: { visibleSlides: 1, slideMultiple: 1 } }"
-    >
+<div class="container multipleS-section my-4">
 
-    
-      <vueper-slide
-        v-for="(slide, i) in slides"
-        :key="i"
-        :image="slide.image"
-        :title="slide.title"
-        :content="slide.content"
-      />
-    </vueper-slides>
+
+  <!--Carousel Wrapper-->
+  <div id="multi-item-example" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+    <!--Controls-->
+    <div class="controls-top">
+      <a class="btn-floating first-control" href="#multi-item-example" data-slide="prev"><i class="fa fa-chevron-left"></i></a>
+      <a class="btn-floating second-control" href="#multi-item-example" data-slide="next"><i class="fa fa-chevron-right"></i></a>
+    </div>
+    <!--/.Controls-->
+
+    <!--Indicators-->
+    <ol class="carousel-indicators">
+      <li data-target="#multi-item-example" data-slide-to="0" class="active"></li>
+      <li data-target="#multi-item-example" data-slide-to="1"></li>
+      <li data-target="#multi-item-example" data-slide-to="2"></li>
+    </ol>
+    <!--/.Indicators-->
+
+    <!--Slides-->
+    <div class="carousel-inner" role="listbox">
+
+      <!--First slide-->
+      <div class="carousel-item active">
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-2">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                   alt="Card image cap">
+            </div>
+          </div>
+
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card mb-2">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+                   alt="Card image cap">
+            </div>
+          </div>
+
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card mb-2">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+                   alt="Card image cap">
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--/.First slide-->
+
+      <!--Second slide-->
+       <div class="carousel-item">
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-2">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                   alt="Card image cap">
+            </div>
+          </div>
+
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card mb-2">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+                   alt="Card image cap">
+            </div>
+          </div>
+
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card mb-2">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+                   alt="Card image cap">
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--/.Second slide-->
+
+      <!--Third slide-->
+      <div class="carousel-item ">
+
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-2">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(34).jpg"
+                   alt="Card image cap">
+            </div>
+          </div>
+
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card mb-2">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(18).jpg"
+                   alt="Card image cap">
+            </div>
+          </div>
+
+          <div class="col-md-4 clearfix d-none d-md-block">
+            <div class="card mb-2">
+              <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(35).jpg"
+                   alt="Card image cap">
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!--/.Third slide-->
+
+    </div>
+    <!--/.Slides-->
+
   </div>
+  <!--/.Carousel Wrapper-->
+
+
+</div>
 </template>
 
 <script>
-import { VueperSlides, VueperSlide } from "vueperslides";
-import 'vueperslides/dist/vueperslides.css';
-import AppSection7 from "./AppSection7.vue";
+
 
 export default {
-   components:{
-      VueperSlides, VueperSlide,
-      appSection7: AppSection7,
-       },
-
-data: () => ({
-
-  slides:[ 
-  {
-     title: '',
-    content: '',
-  image: require('../../../../assets/Image/img-13.png'),
-
- },
-  {
-     title: '',
-    content: '',
-  image: require('../../../../assets/Image/img-1.jpg'),
-
- },
-   {
-     title: '',
-    content: '',
-  image: require('../../../../assets/Image/img-14.png'),
-
- },
-  {
-     title: '',
-    content: '',
-  image: require('../../../../assets/Image/img-15.jpg'),
-
- },
-  {
-     title: '',
-    content: '',
-  image: require('../../../../assets/Image/img-16.png'),
-
- },
- 
- 
-  
- 
-  ],
-
- 
-  
- 
 
 
+  data: () => ({
 
-
-
-
-
-
-}
-),
+  })
 };
-
-
-
-
-
-
-
 </script>
 
 <style>
-div.vueper {
-  direction:ltr !important ;
-}
-
-.vueperslides__bullet .default {
-  background-color: rgba(0, 0, 0, 0.3);
-  border: none;
-  box-shadow: none;
-  transition: 0.3s;
-  width: 16px;
-  height: 16px;
-}
-
-.vueperslides__bullet--active .default {background-color:pink;}
-
-.vueperslides__bullet span {
-  display: block;
-  color: #fff;
-  font-size: 10px;
-  opacity: 0.8;
-}
-
-
-
-
 
 </style>

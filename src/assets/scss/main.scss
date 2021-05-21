@@ -1,0 +1,18 @@
+@import "base";
+@import "components";
+@import "layout";
+
+@font-face {
+  font-family: "samim","shabnam","AKavir";
+  src: url("/src/assets/Fonts/samim/Samim.eot") format("eot");
+  src: url("/src/assets/Fonts/samim/Samim.ttf") format("ttf");
+  src: url("/src/assets/Fonts/samim/Samim.woff") format("woff");
+  src: url("/src/assets/Fonts/shabnam/Shabnam.eot") format("eot");
+  src: url("/src/assets/Fonts/shabnam/Shabnam.ttf") format("ttf");
+  src: url("/src/assets/Fonts/shabnam/Shabnam.woff") format("woff");
+  src: url("/src/assets/Fonts/AKavir.ttf") format("ttf");
+}
+body{
+  background-color: red;
+}
+

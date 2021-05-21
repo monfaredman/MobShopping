@@ -1,0 +1,620 @@
+body {
+  direction: rtl;
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+body {
+  direction: rtl;
+  margin: 0px 0px;
+  padding: 0px 0px;
+}
+
+div.brand-header {
+  width: 126px;
+  margin: auto auto;
+  height: 84px;
+}
+
+div.brand-header li {
+  font-size: 90px;
+  height: 70px;
+  list-style: none;
+  text-align: center;
+  line-height: 0px;
+  margin: -10px auto;
+}
+
+div.brand-header li a {
+  text-decoration: none;
+}
+
+div.brand-header h5 {
+  color: #96d6d6;
+  text-align: center;
+  margin: 9px auto;
+}
+
+div.menue-header {
+  width: 205px;
+  margin: auto;
+}
+
+div.menue-header .nav-item-mobile {
+  border-left: 1px solid black;
+  margin: 0px 0px -8px 8px;
+  white-space: nowrap;
+}
+
+div.menue-header .nav-item-mobile a.dropdown-toggle {
+  font-size: 22px !important;
+  font-family: "Samim" !important;
+  font-weight: 900 !important;
+  text-decoration: none;
+}
+
+div.menue-header .nav-item-mobile .dropdown-menu {
+  top: 79%;
+  left: -62px;
+  min-width: 65px;
+  padding: 3px;
+  margin: 0px 0px 0px;
+  font-size: 0rem;
+  color: #212529;
+  text-align: center;
+  list-style: none;
+  background-color: #a0c8f0a3;
+  border: 1px solid #d7d7d7;
+  border-radius: 0.25rem;
+}
+
+div.menue-header .nav-item-mobile .dropdown-menu a.nav-link {
+  width: 62px !important;
+  font-size: 14px !important;
+  font-family: "Shabnam" !important;
+  font-weight: 100;
+  text-align: center !important;
+  height: 33px !important;
+  margin: auto auto !important;
+  line-height: 25px;
+  text-decoration: none;
+}
+
+div.menue-header .nav-item-janebi {
+  margin: auto -6px;
+  padding: 0px 0px;
+  white-space: nowrap;
+}
+
+div.menue-header .nav-item-janebi a.dropdown-toggle2 {
+  font-size: 22px !important;
+  font-family: "Samim" !important;
+  text-decoration: none;
+  font-weight: 900 !important;
+}
+
+div.menue-header .nav-item-janebi .dropdown-menu2 {
+  top: 104%;
+  left: -42px;
+  min-width: 149px;
+  padding: 3px;
+  margin: 0px 0px 0px;
+  color: #212529;
+  text-align: center;
+  list-style: none;
+  background-color: #a0c8f0a3;
+  border: 1px solid #d7d7d7;
+  border-radius: 0.25rem;
+}
+
+div.menue-header .nav-item-janebi a {
+  width: 136px !important;
+  font-size: 14px !important;
+  font-family: "Shabnam" !important;
+  font-weight: 100;
+  text-align: center !important;
+  height: 33px !important;
+  margin: 0px auto !important;
+  line-height: 25px;
+  text-decoration: none;
+}
+
+div.social-header a {
+  font-size: 12px !important;
+  color: red !important;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+div.carousel {
+  margin-top: 92px;
+}
+
+div.carousel .carousel-indicators li {
+  position: relative;
+  flex: 0 1 auto;
+  width: 9px;
+  height: 10px;
+  margin-right: 3px;
+  margin-left: 3px;
+  border-radius: 50px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+div.carousel .carousel-indicators {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  left: 0;
+  z-index: 15;
+  display: flex;
+  justify-content: center;
+  padding-left: 0;
+  margin-right: 15%;
+  margin-left: 18%;
+  list-style: none;
+}
+
+div.boxing-section1 {
+  background-color: gray;
+  margin: 20px auto;
+  text-align: center;
+}
+
+div.boxing-section1 ul {
+  background-color: green;
+  display: flex;
+  justify-content: center;
+}
+
+div.boxing-section1 ul li {
+  width: 309px;
+  height: 300px;
+  border: 2px solid white;
+  list-style: none;
+  padding: 21px 0px;
+  margin: 27px 63px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+div.boxing-section1 ul li h3 {
+  font-family: Shabnam;
+  font-size: 29px;
+  font-weight: 900;
+}
+
+div.boxing-section1 ul li img {
+  width: 284px;
+  height: 226px;
+}
+
+div.newest-section {
+  margin: 20px auto;
+  width: 100%;
+  background-color: #b1b1b8;
+}
+
+div.newest-section .newest-title {
+  background-color: #f5caca;
+  width: 100%;
+  text-align: center;
+}
+
+div.newest-section .newest-title p {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+
+div.newest-section .newest-title img {
+  width: 63px;
+  height: 62px;
+  margin: auto 10px auto auto;
+  transform: rotate(44deg);
+}
+
+div.newest-section .newest-cards {
+  display: flex;
+  justify-content: center;
+  margin: auto auto;
+  width: 95%;
+  background-color: white;
+}
+
+div.newest-section .newest-cards .card {
+  background-color: #65e9e9;
+  border: 2px solid red;
+  margin: 10px 10px;
+  border-radius: 10px;
+  top: 0px;
+  position: relative;
+}
+
+div.newest-section .newest-cards .card .card-header {
+  background-color: #d7d7d7;
+  padding: 0px;
+  text-align: center;
+  border: none;
+  border-radius: 0px;
+}
+
+div.newest-section .newest-cards .card .card-body {
+  background-color: #945555;
+  white-space: nowrap;
+  padding: 12px 0px;
+  border: none;
+  border-radius: 0px;
+}
+
+div.newest-section .newest-cards .card .card-body h6 {
+  font-size: 17px;
+  font-weight: 400;
+  color: yellow;
+  font-family: 'Font Awesome 5 Brands';
+  margin: auto auto;
+  text-align: center;
+}
+
+div.newest-section .newest-cards .card .card-footer {
+  background-color: #290909;
+  padding: 20px 0px;
+  border: none;
+  border-radius: 0px;
+}
+
+div.newest-section .newest-cards .card .card-footer h5 {
+  color: red;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 10px 3px #b8b6b68f;
+  transform: scale(1.01);
+}
+
+div.bag-section {
+  margin: 20px auto;
+  width: 100%;
+  background-color: #b1b1b8;
+}
+
+div.bag-section .bag-title {
+  background-color: #f5caca;
+  width: 100%;
+  text-align: center;
+}
+
+div.bag-section .bag-title p {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+
+div.bag-section .bag-title img {
+  width: 63px;
+  height: 62px;
+  margin: auto 10px auto auto;
+}
+
+div.bag-section .bag-cards {
+  display: flex;
+  justify-content: center;
+  margin: auto auto;
+  width: 95%;
+  background-color: white;
+}
+
+div.bag-section .bag-cards .card {
+  background-color: #65e9e9;
+  border: 2px solid red;
+  margin: 10px 10px;
+  border-radius: 10px;
+  top: 0px;
+  position: relative;
+}
+
+div.bag-section .bag-cards .card .card-header {
+  background-color: #d7d7d7;
+  padding: 0px;
+  text-align: center;
+  border: none;
+  border-radius: 0px;
+}
+
+div.bag-section .bag-cards .card .card-body {
+  background-color: #945555;
+  padding: 12px 0px;
+  border: none;
+  border-radius: 0px;
+}
+
+div.bag-section .bag-cards .card .card-body h6 {
+  font-size: 12px;
+  font-weight: 100;
+  color: yellow;
+  font-family: 'Font Awesome 5 Brands';
+  margin: auto auto;
+  text-align: center;
+}
+
+div.bag-section .bag-cards .card .card-footer {
+  background-color: #290909;
+  padding: 20px 0px;
+  border: none;
+  border-radius: 0px;
+}
+
+div.bag-section .bag-cards .card .card-footer h5 {
+  color: red;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 10px 3px #b8b6b68f;
+  transform: scale(1.01);
+}
+
+div.multipleS-section .controls-top .first-control {
+  position: absolute;
+  top: 103px;
+  left: -92px;
+  font-size: 30px;
+  text-align: left;
+}
+
+div.multipleS-section .controls-top .second-control {
+  position: absolute;
+  top: 103px;
+  left: 1187px;
+  font-size: 30px;
+}
+
+div.multipleS-section .carousel-indicators {
+  top: 250px;
+  padding: 0px;
+}
+
+div.multipleS-section .carousel-indicators li {
+  background-color: #bcb2b269;
+  margin: 0px 5px;
+}
+
+li:focus {
+  background-color: #ff000069;
+}
+
+div.Bestselling-section {
+  margin: 20px auto;
+  width: 100%;
+  background-color: #b1b1b8;
+}
+
+div.Bestselling-section .Bestselling-title {
+  background-color: #f5caca;
+  width: 100%;
+  text-align: center;
+}
+
+div.Bestselling-section .Bestselling-title p {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+
+div.Bestselling-section .Bestselling-title img {
+  width: 63px;
+  height: 62px;
+  margin: auto 10px auto auto;
+}
+
+div.Bestselling-section .Bestselling-cards {
+  display: flex;
+  justify-content: center;
+  margin: auto auto;
+  width: 95%;
+  background-color: white;
+}
+
+div.Bestselling-section .Bestselling-cards .card {
+  background-color: #65e9e9;
+  border: 2px solid red;
+  margin: 10px 10px;
+  border-radius: 10px;
+  top: 0px;
+  position: relative;
+}
+
+div.Bestselling-section .Bestselling-cards .card .card-header {
+  background-color: #d7d7d7;
+  padding: 0px;
+  text-align: center;
+  border: none;
+  border-radius: 0px;
+}
+
+div.Bestselling-section .Bestselling-cards .card .card-body {
+  background-color: #945555;
+  padding: 12px 0px;
+  border: none;
+  border-radius: 0px;
+}
+
+div.Bestselling-section .Bestselling-cards .card .card-body h6 {
+  font-size: 12px;
+  font-weight: 100;
+  color: yellow;
+  font-family: 'Font Awesome 5 Brands';
+  margin: auto auto;
+  text-align: center;
+}
+
+div.Bestselling-section .Bestselling-cards .card .card-footer {
+  background-color: #290909;
+  padding: 20px 0px;
+  border: none;
+  border-radius: 0px;
+}
+
+div.Bestselling-section .Bestselling-cards .card .card-footer h5 {
+  color: red;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 10px 3px #b8b6b68f;
+  transform: scale(1.01);
+}
+
+div.H-section {
+  margin: 20px auto;
+  width: 100%;
+  background-color: #b1b1b8;
+}
+
+div.H-section .H-title {
+  background-color: #f5caca;
+  width: 100%;
+  text-align: center;
+}
+
+div.H-section .H-title p {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 600;
+  color: black;
+}
+
+div.H-section .H-title img {
+  width: 63px;
+  height: 62px;
+  margin: auto 10px auto auto;
+}
+
+div.H-section .H-cards {
+  display: flex;
+  justify-content: center;
+  margin: auto auto;
+  width: 95%;
+  background-color: white;
+}
+
+div.H-section .H-cards .card {
+  background-color: #65e9e9;
+  border: 2px solid red;
+  margin: 10px 10px;
+  border-radius: 10px;
+  top: 0px;
+  position: relative;
+}
+
+div.H-section .H-cards .card .card-header {
+  background-color: #d7d7d7;
+  padding: 0px;
+  text-align: center;
+  border: none;
+  border-radius: 0px;
+}
+
+div.H-section .H-cards .card .card-body {
+  background-color: #945555;
+  padding: 12px 0px;
+  border: none;
+  border-radius: 0px;
+}
+
+div.H-section .H-cards .card .card-body h6 {
+  font-size: 12px;
+  font-weight: 100;
+  color: yellow;
+  font-family: 'Font Awesome 5 Brands';
+  margin: auto auto;
+  text-align: center;
+}
+
+div.H-section .H-cards .card .card-footer {
+  background-color: #290909;
+  padding: 20px 0px;
+  border: none;
+  border-radius: 0px;
+}
+
+div.H-section .H-cards .card .card-footer h5 {
+  color: red;
+  font-size: 22px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 10px 3px #b8b6b68f;
+  transform: scale(1.01);
+}
+
+div.question-section {
+  display: flex;
+  justify-content: center;
+}
+
+div.question-section .question-item {
+  background: #fcfcfcf3;
+  padding: 3rem;
+  border: 1px solid rebeccapurple;
+  border-radius: 9px;
+  margin: 30px;
+}
+
+div.question-section .question-item .question-icon {
+  font-size: 6rem;
+  margin: 30px;
+  transition: all 0.5s ease-in-out;
+}
+
+div.question-section .question-item h5 {
+  color: blue;
+}
+
+.question-icon:hover {
+  transform: translateY(-15%);
+}
+
+div.header {
+  width: 100%;
+  position: fixed;
+  background-color: #fbff00;
+  z-index: 100;
+  top: 0px;
+}
+
+div.header nav {
+  height: 92px;
+}
+
+@font-face {
+  font-family: "samim","shabnam","AKavir";
+  src: url("/src/assets/Fonts/samim/Samim.eot") format("eot");
+  src: url("/src/assets/Fonts/samim/Samim.ttf") format("ttf");
+  src: url("/src/assets/Fonts/samim/Samim.woff") format("woff");
+  src: url("/src/assets/Fonts/shabnam/Shabnam.eot") format("eot");
+  src: url("/src/assets/Fonts/shabnam/Shabnam.ttf") format("ttf");
+  src: url("/src/assets/Fonts/shabnam/Shabnam.woff") format("woff");
+  src: url("/src/assets/Fonts/AKavir.ttf") format("ttf");
+}
+
+body {
+  background-color: red;
+}
+/*# sourceMappingURL=main.css.map */
