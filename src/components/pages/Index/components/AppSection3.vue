@@ -1,8 +1,8 @@
 <template>
   <div class="Bestselling-section">
     <div class="Bestselling-title">
-      <p>کیف و کاور گوشی</p>
-      <img class="img-fluid" src="../../../../assets/Image/img-32.png" alt="" />
+      <p>پرفروش ترین محصولات</p>
+      <img class="img-fluid" src="../../../../assets/Image/bestsell.png" alt="" />
     </div>
     <div class="Bestselling-cards">
       <div v-for="item in 6" :key="item" class="card">
@@ -10,13 +10,13 @@
           <a href=""
             ><img
               class="card-img img-fluid "
-              src="../../../../assets/Image/img-24.jpg"
+              src="../../../../assets/Image/img-22.jpg"
               alt=""
           /></a>
         </div>
         <div class="card-body">
           <h6>
-            کاور جوی روم مدل JR-BP273 مناسب برای گوشی موبایل اپل iPhone 6 Plus
+           iPhone 12 Pro Max A2412
           </h6>
         </div>
         <div class="card-footer">

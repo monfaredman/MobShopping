@@ -1,6 +1,6 @@
-@import "base";
-@import "components";
-@import "layout";
+@import "_base";
+@import "_components";
+@import "_layout";
 
 @font-face {
   font-family: "samim","shabnam","AKavir";
@@ -13,6 +13,10 @@
   src: url("/src/assets/Fonts/AKavir.ttf") format("ttf");
 }
 body{
-  background-color: red;
+  background-color: rgb(255, 255, 255);
+  direction: rtl;
+  margin: 0px 0px;
+  padding: 0px 0px;
+  text-align:unset !important;
 }
 

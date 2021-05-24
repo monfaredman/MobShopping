@@ -1,19 +1,17 @@
 <template>
       <!-- footer -->
-    <div class="footer   bg-light" style="border:2px solid #913978;height:95px">
-      <div style="height:209px">
-        <div class=" footer-first d-flex justify-content-around bg-light p-0 m-0" style="height:209px">
-          <div class="footer-item">
-            <div action="" class="mt-5">
+    <footer class="footer">
+      <div class="top-section-footer">
+
+          <div class="footer-item-1">
               <router-link to="login">
                 <a href="#" class="btn btn-info">ورود به حساب کاربری </a>
                 </router-link>
-            </div>
           </div>
-          <div class="footer-item mt-5">
+          <div class="footer-item-2">
             <ul>
               <li>
-                <h4 class="footer-item-h4">اطلاعات فروشگاه</h4>
+                <h4>اطلاعات فروشگاه</h4>
               </li>
               <li>
                 نشانی : تهران، خیابان ولیعصـر، تقاطع میـرداماد،<br />
@@ -32,7 +30,7 @@
             </ul>
           </div>
 
-          <div class="footer-item mt-5">
+          <div class="footer-item-3">
             <ul>
               <li>
                 <h4>راهنمای مشتریان</h4>
@@ -44,22 +42,20 @@
               <li><a href="">درباره ما</a> </li>
             </ul>
           </div>
-        </div>
+
       </div>
-      <div class="footer-second bg-secondary ">
-        <div class="col-12 d-flex justify-content-between">
-          <div class="col-6"> 
-            <p class="mt-5 text-right">فروشگاه اینترنتی موبایل شاپ © 2021</p>
-          <p class="mt-2 text-right"> استفاده از محتویات این سایت تنها با ذکر منبع و درج لینک مجاز است</p>
+      <div class="button-section-footer">
+          <div class="footer-item-1">
+            <p class="">فروشگاه اینترنتی موبایل شاپ © 2021</p>
+          <h5 class=""> استفاده از محتویات این سایت تنها با ذکر منبع و درج لینک مجاز است</h5>
           </div>
-          <div class="col-6 d-flex justify-content-center">
+          <div class="footer-item-2">
             <img src="/src/assets/Image/img-19.png" alt="" class="img-fluid" />
            <img src="/src/assets/Image/img-18.jpeg" alt="" class="img-fluid" />
             <img src="/src/assets/Image/img-20.png" alt="" class="img-fluid" />
           </div>
-        </div>
       </div>
-    </div>
+    </footer>
 
     <!-- end footer -->
 </template>

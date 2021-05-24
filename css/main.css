@@ -1,28 +1,19 @@
-body {
-  direction: rtl;
-  margin: 0px 0px;
-  padding: 0px 0px;
-}
-
-body {
-  direction: rtl;
-  margin: 0px 0px;
-  padding: 0px 0px;
-}
-
 div.brand-header {
   width: 126px;
   margin: auto auto;
-  height: 84px;
 }
 
 div.brand-header li {
-  font-size: 90px;
-  height: 70px;
   list-style: none;
+  display: inline-block;
   text-align: center;
-  line-height: 0px;
-  margin: -10px auto;
+  margin: -22px auto;
+}
+
+div.brand-header li .svg-inline--fa.fa-w-18 {
+  height: 129px;
+  width: 137px;
+  color: gray;
 }
 
 div.brand-header li a {
@@ -30,9 +21,14 @@ div.brand-header li a {
 }
 
 div.brand-header h5 {
-  color: #96d6d6;
+  color: #ffffff;
   text-align: center;
-  margin: 9px auto;
+  margin: 0px auto;
+  display: inline-block;
+  position: absolute;
+  font-size: 13px;
+  right: 50px;
+  top: 30px;
 }
 
 div.menue-header {
@@ -41,7 +37,7 @@ div.menue-header {
 }
 
 div.menue-header .nav-item-mobile {
-  border-left: 1px solid black;
+  border-left: 1px solid #0000001f;
   margin: 0px 0px -8px 8px;
   white-space: nowrap;
 }
@@ -51,6 +47,7 @@ div.menue-header .nav-item-mobile a.dropdown-toggle {
   font-family: "Samim" !important;
   font-weight: 900 !important;
   text-decoration: none;
+  color: black;
 }
 
 div.menue-header .nav-item-mobile .dropdown-menu {
@@ -91,6 +88,7 @@ div.menue-header .nav-item-janebi a.dropdown-toggle2 {
   font-family: "Samim" !important;
   text-decoration: none;
   font-weight: 900 !important;
+  color: black;
 }
 
 div.menue-header .nav-item-janebi .dropdown-menu2 {
@@ -121,7 +119,14 @@ div.menue-header .nav-item-janebi a {
 
 div.social-header a {
   font-size: 12px !important;
-  color: red !important;
+  color: #9648dfde !important;
+}
+
+.fa-instagram:hover,
+.fa-telegram:hover,
+.fa-twitter:hover,
+.fa-whatsapp:hover {
+  color: #b23030;
 }
 
 .dropdown:hover .dropdown-menu {
@@ -129,7 +134,7 @@ div.social-header a {
 }
 
 div.carousel {
-  margin-top: 92px;
+  margin-top: 3px;
 }
 
 div.carousel .carousel-indicators li {
@@ -161,12 +166,12 @@ div.carousel .carousel-indicators {
 
 div.boxing-section1 {
   background-color: gray;
-  margin: 20px auto;
+  margin: 0px auto;
   text-align: center;
 }
 
 div.boxing-section1 ul {
-  background-color: green;
+  background-color: #fbfbfb;
   display: flex;
   justify-content: center;
 }
@@ -196,19 +201,24 @@ div.boxing-section1 ul li img {
 div.newest-section {
   margin: 20px auto;
   width: 100%;
-  background-color: #b1b1b8;
+  background-color: #f8f8fa;
+  padding-bottom: 27px;
 }
 
 div.newest-section .newest-title {
-  background-color: #f5caca;
-  width: 100%;
+  background-color: #f8f8fa;
+  width: 90%;
   text-align: center;
+  border-top: 2px solid #e2e0e0;
+  margin: auto;
+  padding-top: 25px;
+  padding-bottom: 10px;
 }
 
 div.newest-section .newest-title p {
   display: inline-block;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 19px;
+  font-weight: 700;
   color: black;
 }
 
@@ -224,12 +234,11 @@ div.newest-section .newest-cards {
   justify-content: center;
   margin: auto auto;
   width: 95%;
-  background-color: white;
+  background-color: #f8f8fa;
 }
 
 div.newest-section .newest-cards .card {
-  background-color: #65e9e9;
-  border: 2px solid red;
+  border: 2px solid #eff1f2;
   margin: 10px 10px;
   border-radius: 10px;
   top: 0px;
@@ -239,39 +248,44 @@ div.newest-section .newest-cards .card {
 div.newest-section .newest-cards .card .card-header {
   background-color: #d7d7d7;
   padding: 0px;
+  margin-bottom: 10px;
   text-align: center;
-  border: none;
-  border-radius: 0px;
+  border: 2px solid white;
+  border-radius: 10px 10px 0px 0px;
 }
 
 div.newest-section .newest-cards .card .card-body {
-  background-color: #945555;
+  border-top: 1px solid #e4e4e4;
+  background-color: #ffffff;
   white-space: nowrap;
   padding: 12px 0px;
-  border: none;
+  width: 85%;
+  margin: auto;
   border-radius: 0px;
 }
 
 div.newest-section .newest-cards .card .card-body h6 {
-  font-size: 17px;
+  font-size: 15px;
   font-weight: 400;
-  color: yellow;
-  font-family: 'Font Awesome 5 Brands';
+  color: #7d7d6f;
+  font-family: "Font Awesome 5 Brands";
   margin: auto auto;
   text-align: center;
 }
 
-div.newest-section .newest-cards .card .card-footer {
-  background-color: #290909;
+div.newest-section .newest-cards .card .card-body .card-footer {
+  background-color: #ffffff;
   padding: 20px 0px;
-  border: none;
+  border-top: 1px solid #e8dcdc;
   border-radius: 0px;
+  width: 85%;
+  margin: auto;
 }
 
-div.newest-section .newest-cards .card .card-footer h5 {
-  color: red;
-  font-size: 22px;
-  font-weight: 500;
+div.newest-section .newest-cards .card .card-body .card-footer h5 {
+  color: black;
+  font-size: 19px;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -283,19 +297,24 @@ div.newest-section .newest-cards .card .card-footer h5 {
 div.bag-section {
   margin: 20px auto;
   width: 100%;
-  background-color: #b1b1b8;
+  background-color: #f8f8fa;
+  padding-bottom: 27px;
 }
 
 div.bag-section .bag-title {
-  background-color: #f5caca;
-  width: 100%;
+  background-color: #f8f8fa;
+  width: 90%;
   text-align: center;
+  border-top: 2px solid #e2e0e0;
+  margin: auto;
+  padding-top: 25px;
+  padding-bottom: 10px;
 }
 
 div.bag-section .bag-title p {
   display: inline-block;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 19px;
+  font-weight: 700;
   color: black;
 }
 
@@ -303,6 +322,8 @@ div.bag-section .bag-title img {
   width: 63px;
   height: 62px;
   margin: auto 10px auto auto;
+  transform: rotate(44deg);
+  transform: none;
 }
 
 div.bag-section .bag-cards {
@@ -310,12 +331,11 @@ div.bag-section .bag-cards {
   justify-content: center;
   margin: auto auto;
   width: 95%;
-  background-color: white;
+  background-color: #f8f8fa;
 }
 
 div.bag-section .bag-cards .card {
-  background-color: #65e9e9;
-  border: 2px solid red;
+  border: 2px solid #eff1f2;
   margin: 10px 10px;
   border-radius: 10px;
   top: 0px;
@@ -325,38 +345,44 @@ div.bag-section .bag-cards .card {
 div.bag-section .bag-cards .card .card-header {
   background-color: #d7d7d7;
   padding: 0px;
+  margin-bottom: 10px;
   text-align: center;
-  border: none;
-  border-radius: 0px;
+  border: 2px solid white;
+  border-radius: 10px 10px 0px 0px;
 }
 
 div.bag-section .bag-cards .card .card-body {
-  background-color: #945555;
+  border-top: 1px solid #e4e4e4;
+  background-color: #ffffff;
+  white-space: normal;
   padding: 12px 0px;
-  border: none;
+  width: 85%;
+  margin: auto;
   border-radius: 0px;
 }
 
 div.bag-section .bag-cards .card .card-body h6 {
-  font-size: 12px;
-  font-weight: 100;
-  color: yellow;
-  font-family: 'Font Awesome 5 Brands';
+  font-size: 15px;
+  font-weight: 400;
+  color: #7d7d6f;
+  font-family: "Font Awesome 5 Brands";
   margin: auto auto;
   text-align: center;
 }
 
 div.bag-section .bag-cards .card .card-footer {
-  background-color: #290909;
+  background-color: #ffffff;
   padding: 20px 0px;
-  border: none;
+  border-top: 1px solid #e8dcdc;
   border-radius: 0px;
+  width: 85%;
+  margin: auto;
 }
 
 div.bag-section .bag-cards .card .card-footer h5 {
-  color: red;
-  font-size: 22px;
-  font-weight: 500;
+  color: black;
+  font-size: 19px;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -365,51 +391,74 @@ div.bag-section .bag-cards .card .card-footer h5 {
   transform: scale(1.01);
 }
 
-div.multipleS-section .controls-top .first-control {
-  position: absolute;
-  top: 103px;
-  left: -92px;
-  font-size: 30px;
-  text-align: left;
+div.carousel-multi-item {
+  background-color: #f6f8f8;
+  width: 85%;
+  margin: 20px auto;
+  border-radius: 12px;
+  text-align: center;
+  height: 39%;
+  padding: 40px 0px;
+  border: 1px solid #f8f3f3;
 }
 
-div.multipleS-section .controls-top .second-control {
-  position: absolute;
-  top: 103px;
-  left: 1187px;
-  font-size: 30px;
+div.carousel-multi-item .controls-top a.first-control {
+  font-size: 35px;
+  position: relative;
+  top: 62px;
+  right: 636px;
 }
 
-div.multipleS-section .carousel-indicators {
-  top: 250px;
+div.carousel-multi-item .controls-top a.second-control {
+  position: absolute;
+  top: 103px;
+  left: 1195px;
+  font-size: 35px;
+}
+
+div.carousel-multi-item .carousel-indicators {
+  margin: -4px 0px;
   padding: 0px;
 }
 
-div.multipleS-section .carousel-indicators li {
+div.carousel-multi-item .carousel-indicators li {
   background-color: #bcb2b269;
   margin: 0px 5px;
 }
 
-li:focus {
-  background-color: #ff000069;
+div.carousel-multi-item .carousel-inner {
+  width: 90%;
+  margin: -47px auto;
+  background-color: #f6f8f8;
+}
+
+div.carousel-multi-item .carousel-inner img {
+  width: 314px;
+  height: 190px;
+  border-radius: 6px;
 }
 
 div.Bestselling-section {
   margin: 20px auto;
   width: 100%;
-  background-color: #b1b1b8;
+  background-color: #f8f8fa;
+  padding-bottom: 27px;
 }
 
 div.Bestselling-section .Bestselling-title {
-  background-color: #f5caca;
-  width: 100%;
+  background-color: #f8f8fa;
+  width: 90%;
   text-align: center;
+  border-top: 2px solid #e2e0e0;
+  margin: auto;
+  padding-top: 25px;
+  padding-bottom: 10px;
 }
 
 div.Bestselling-section .Bestselling-title p {
   display: inline-block;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 19px;
+  font-weight: 700;
   color: black;
 }
 
@@ -417,6 +466,8 @@ div.Bestselling-section .Bestselling-title img {
   width: 63px;
   height: 62px;
   margin: auto 10px auto auto;
+  transform: rotate(44deg);
+  transform: none;
 }
 
 div.Bestselling-section .Bestselling-cards {
@@ -424,12 +475,11 @@ div.Bestselling-section .Bestselling-cards {
   justify-content: center;
   margin: auto auto;
   width: 95%;
-  background-color: white;
+  background-color: #f8f8fa;
 }
 
 div.Bestselling-section .Bestselling-cards .card {
-  background-color: #65e9e9;
-  border: 2px solid red;
+  border: 2px solid #eff1f2;
   margin: 10px 10px;
   border-radius: 10px;
   top: 0px;
@@ -439,38 +489,44 @@ div.Bestselling-section .Bestselling-cards .card {
 div.Bestselling-section .Bestselling-cards .card .card-header {
   background-color: #d7d7d7;
   padding: 0px;
+  margin-bottom: 10px;
   text-align: center;
-  border: none;
-  border-radius: 0px;
+  border: 2px solid white;
+  border-radius: 10px 10px 0px 0px;
 }
 
 div.Bestselling-section .Bestselling-cards .card .card-body {
-  background-color: #945555;
+  border-top: 1px solid #e4e4e4;
+  background-color: #ffffff;
+  white-space: nowrap;
   padding: 12px 0px;
-  border: none;
+  width: 85%;
+  margin: auto;
   border-radius: 0px;
 }
 
 div.Bestselling-section .Bestselling-cards .card .card-body h6 {
-  font-size: 12px;
-  font-weight: 100;
-  color: yellow;
-  font-family: 'Font Awesome 5 Brands';
+  font-size: 15px;
+  font-weight: 400;
+  color: #7d7d6f;
+  font-family: "Font Awesome 5 Brands";
   margin: auto auto;
   text-align: center;
 }
 
 div.Bestselling-section .Bestselling-cards .card .card-footer {
-  background-color: #290909;
+  background-color: #ffffff;
   padding: 20px 0px;
-  border: none;
+  border-top: 1px solid #e8dcdc;
   border-radius: 0px;
+  width: 85%;
+  margin: auto;
 }
 
 div.Bestselling-section .Bestselling-cards .card .card-footer h5 {
-  color: red;
-  font-size: 22px;
-  font-weight: 500;
+  color: black;
+  font-size: 19px;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -482,19 +538,24 @@ div.Bestselling-section .Bestselling-cards .card .card-footer h5 {
 div.H-section {
   margin: 20px auto;
   width: 100%;
-  background-color: #b1b1b8;
+  background-color: #f8f8fa;
+  padding-bottom: 27px;
 }
 
 div.H-section .H-title {
-  background-color: #f5caca;
-  width: 100%;
+  background-color: #f8f8fa;
+  width: 90%;
   text-align: center;
+  border-top: 2px solid #e2e0e0;
+  margin: auto;
+  padding-top: 25px;
+  padding-bottom: 10px;
 }
 
 div.H-section .H-title p {
   display: inline-block;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 19px;
+  font-weight: 700;
   color: black;
 }
 
@@ -502,6 +563,8 @@ div.H-section .H-title img {
   width: 63px;
   height: 62px;
   margin: auto 10px auto auto;
+  transform: rotate(44deg);
+  transform: none;
 }
 
 div.H-section .H-cards {
@@ -509,12 +572,11 @@ div.H-section .H-cards {
   justify-content: center;
   margin: auto auto;
   width: 95%;
-  background-color: white;
+  background-color: #f8f8fa;
 }
 
 div.H-section .H-cards .card {
-  background-color: #65e9e9;
-  border: 2px solid red;
+  border: 2px solid #eff1f2;
   margin: 10px 10px;
   border-radius: 10px;
   top: 0px;
@@ -524,38 +586,44 @@ div.H-section .H-cards .card {
 div.H-section .H-cards .card .card-header {
   background-color: #d7d7d7;
   padding: 0px;
+  margin-bottom: 10px;
   text-align: center;
-  border: none;
-  border-radius: 0px;
+  border: 2px solid white;
+  border-radius: 10px 10px 0px 0px;
 }
 
 div.H-section .H-cards .card .card-body {
-  background-color: #945555;
+  border-top: 1px solid #e4e4e4;
+  background-color: #ffffff;
+  white-space: nowrap;
   padding: 12px 0px;
-  border: none;
+  width: 85%;
+  margin: auto;
   border-radius: 0px;
 }
 
 div.H-section .H-cards .card .card-body h6 {
-  font-size: 12px;
-  font-weight: 100;
-  color: yellow;
-  font-family: 'Font Awesome 5 Brands';
+  font-size: 15px;
+  font-weight: 400;
+  color: #7d7d6f;
+  font-family: "Font Awesome 5 Brands";
   margin: auto auto;
   text-align: center;
 }
 
 div.H-section .H-cards .card .card-footer {
-  background-color: #290909;
+  background-color: #ffffff;
   padding: 20px 0px;
-  border: none;
+  border-top: 1px solid #e8dcdc;
   border-radius: 0px;
+  width: 85%;
+  margin: auto;
 }
 
 div.H-section .H-cards .card .card-footer h5 {
-  color: red;
-  font-size: 22px;
-  font-weight: 500;
+  color: black;
+  font-size: 19px;
+  font-weight: 600;
   text-align: center;
 }
 
@@ -570,11 +638,12 @@ div.question-section {
 }
 
 div.question-section .question-item {
-  background: #fcfcfcf3;
-  padding: 3rem;
-  border: 1px solid rebeccapurple;
+  background: #f8f8fa;
+  padding: 17px 50px;
+  border: 1px solid #9648dfde;
   border-radius: 9px;
-  margin: 30px;
+  white-space: nowrap;
+  margin: 26px 61px;
 }
 
 div.question-section .question-item .question-icon {
@@ -588,19 +657,670 @@ div.question-section .question-item h5 {
 }
 
 .question-icon:hover {
-  transform: translateY(-15%);
+  transform: rotate(180deg);
+}
+
+footer {
+  background-image: url("../Image/wave.svg");
+  border: 2px solid #c592b7;
+  width: 100%;
+}
+
+footer .top-section-footer {
+  display: flex;
+  width: 90%;
+  margin: 0px auto;
+  padding: 0px 0px;
+  justify-content: space-around;
+}
+
+footer .top-section-footer .footer-item-1 {
+  margin: auto auto;
+}
+
+footer .top-section-footer .footer-item-2 {
+  margin: 15px auto;
+}
+
+footer .top-section-footer .footer-item-2 ul {
+  list-style: none;
+  text-align: right;
+  line-height: 25px;
+  padding: 17px 0px;
+}
+
+footer .top-section-footer .footer-item-2 ul h4 {
+  font-size: 21px;
+}
+
+footer .top-section-footer .footer-item-2 ul li {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+footer .top-section-footer .footer-item-3 {
+  margin: auto auto;
+}
+
+footer .top-section-footer .footer-item-3 ul {
+  list-style: none;
+  text-align: right;
+  line-height: 25px;
+}
+
+footer .top-section-footer .footer-item-3 ul h4 {
+  font-size: 21px;
+}
+
+footer .top-section-footer .footer-item-3 ul li {
+  font-size: 14px;
+  font-weight: 400;
+}
+
+footer .button-section-footer {
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .button-section-footer .footer-item-1 {
+  margin: 43px 32px 0px 0px;
+  align-items: center;
+  height: 80px;
+}
+
+footer .button-section-footer .footer-item-1 p {
+  text-align: center;
+  color: #27c7be;
+  font-size: 16px;
+}
+
+footer .button-section-footer .footer-item-1 h5 {
+  text-align: center;
+  color: #000303;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+footer .button-section-footer .footer-item-2 {
+  margin: 14px 32px 0px 2px;
+  align-items: center;
+  height: 80px;
+}
+
+footer .button-section-footer .footer-item-2 img {
+  width: 22%;
+}
+
+div.AppJanebi .product {
+  display: grid;
+  grid-template-columns: 0.9fr 1fr;
+  margin: 39px auto -20px auto;
+  padding: 4.5em 0;
+  min-width: 600px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+div.AppJanebi .product .product__photo {
+  position: relative;
+  width: 79%;
+  margin: 0px 83px;
+  height: 507px;
+}
+
+div.AppJanebi .product .product__photo .photo-container {
+  position: absolute;
+  left: -2.5em;
+  display: grid;
+  grid-template-rows: 1fr;
+  width: 84%;
+  height: 101%;
+  border-radius: 6px;
+  box-shadow: 0px 0px 22px 6px #80808066;
+}
+
+div.AppJanebi .product .product__photo .photo-container .photo-main {
+  border-radius: 6px 6px 0 0;
+  background-color: #f5f5f5bb;
+}
+
+div.AppJanebi .product .product__photo .photo-container .photo-main img {
+  position: absolute;
+  left: 0px;
+  top: 1px;
+  border-radius: 3px;
+  width: 423px;
+  height: 81%;
+}
+
+div.AppJanebi .product .product__photo .photo-container .photo-album {
+  padding: 11px 0px;
+  border-radius: 0 0 6px 6px;
+  width: 100%;
+  background-color: #efefef;
+}
+
+div.AppJanebi .product .product__photo .photo-container .photo-album ul {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  padding: 0px;
+  justify-content: center;
+}
+
+div.AppJanebi .product .product__photo .photo-container .photo-album li {
+  padding: 0px;
+  border: 1px solid #a6a6a6;
+  border-radius: 3px;
+  text-align: center;
+  margin: 0px 7px;
+}
+
+div.AppJanebi .product .product__photo .photo-container .photo-album li img {
+  vertical-align: middle;
+  border-style: none;
+  width: 56px;
+  height: 55px;
+  border-radius: 3px;
+}
+
+div.AppJanebi .product .product__info {
+  padding: 0.8em 0;
+  padding: 1.8em 30px;
+  margin: 0px 177px;
+  width: 356px;
+  height: 537px;
+}
+
+div.AppJanebi .product .product__info .title h1 {
+  margin-bottom: 0px;
+  font-size: 1.5em;
+  font-weight: 900;
+}
+
+div.AppJanebi .product .product__info .title span {
+  font-size: 0.7em;
+  color: #a6a6a6;
+}
+
+div.AppJanebi .product .product__info .price {
+  margin: 0px;
+  color: #102ad2;
+  font-size: 1.2em;
+}
+
+div.AppJanebi .product .product__info .price span {
+  padding-left: 0px;
+  font-size: 2.9em;
+}
+
+div.AppJanebi .product .product__info .variant {
+  overflow: auto;
+}
+
+div.AppJanebi .product .product__info .variant h3 {
+  margin-bottom: 0px;
+}
+
+div.AppJanebi .product .product__info .variant li {
+  width: 35px;
+  display: inline-block;
+  height: 35px;
+  padding: 3px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+div.AppJanebi .product .product__info li:not(:first-child) {
+  margin-left: 0.1em;
+}
+
+div.AppJanebi .product .description {
+  clear: left;
+  margin: 2em 0;
+}
+
+div.AppJanebi .product .description h3 {
+  margin-bottom: 0px;
+}
+
+div.AppJanebi .product .description ul {
+  font-size: 0.8em;
+  list-style: none;
+  margin-left: 1em;
+}
+
+div.AppJanebi .product .description li {
+  text-indent: -0.6em;
+  margin-bottom: 0.5em;
+}
+
+div.AppJanebi .product .description li::before {
+  content: "\2022";
+  color: #102ad2;
+  font-weight: 900;
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  margin-left: 0em;
+}
+
+div.AppJanebi .product .buy--btn {
+  padding: 1.5em 3.1em;
+  border: none;
+  border-radius: 7px;
+  font-size: 0.8em;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  color: #fff;
+  background-color: #102ad2;
+  box-shadow: 2px 2px 25px -7px #4c4c4c;
+  cursor: pointer;
+}
+
+div.AppJanebi .product .buy--btn:active {
+  transform: scale(0.97);
+}
+
+div.AppMobile {
+  margin: 20px auto;
+  width: 100%;
+  background-color: #f8f8fa;
+  padding-bottom: 27px;
+}
+
+div.AppMobile .AppMobile-title {
+  margin: 98px auto 0px auto;
+  width: 65%;
+}
+
+div.AppMobile .AppMobile-title p {
+  display: inline-block;
+  font-size: 19px;
+  font-weight: 700;
+  color: black;
+}
+
+div.AppMobile .AppMobile-title img {
+  width: 63px;
+  height: 62px;
+  margin: auto 10px auto auto;
+  transform: rotate(44deg);
+}
+
+div.AppMobile .AppMobile-cards {
+  display: flex;
+  justify-content: center;
+  margin: auto auto;
+  width: 95%;
+  background-color: #f8f8fa;
+  flex-wrap: wrap;
+}
+
+div.AppMobile .AppMobile-cards .card {
+  border: 2px solid #eff1f2;
+  margin: 10px 10px;
+  border-radius: 10px;
+  top: 0px;
+  position: relative;
+  width: 16%;
+}
+
+div.AppMobile .AppMobile-cards .card .card-header {
+  background-color: #d7d7d7;
+  padding: 0px;
+  margin-bottom: 10px;
+  text-align: center;
+  border: 2px solid white;
+  border-radius: 10px 10px 0px 0px;
+}
+
+div.AppMobile .AppMobile-cards .card .card-body {
+  border-top: 1px solid #e4e4e4;
+  background-color: #ffffff;
+  white-space: normal;
+  padding: 12px 0px;
+  width: 85%;
+  margin: auto;
+  border-radius: 0px;
+  padding: 11px;
+}
+
+div.AppMobile .AppMobile-cards .card .card-body h6 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #7d7d6f;
+  font-family: "Font Awesome 5 Brands";
+  margin: auto auto;
+  text-align: center;
+  font-size: 13px;
+}
+
+div.AppMobile .AppMobile-cards .card .card-footer {
+  background-color: #ffffff;
+  padding: 20px 0px;
+  border-top: 1px solid #e8dcdc;
+  border-radius: 0px;
+  width: 85%;
+  margin: auto;
+  padding: 6px 0px;
+}
+
+div.AppMobile .AppMobile-cards .card .card-footer h5 {
+  color: black;
+  font-size: 19px;
+  font-weight: 600;
+  text-align: center;
+  font-size: 17px;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 10px 3px #b8b6b68f;
+  transform: scale(1.01);
+}
+
+.tab-bar {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  box-shadow: 0 1px 3px gray, 0 1px 2px gray;
+}
+
+.tab-bar .tab {
+  width: 150px;
+  padding: 20px 0;
+  background: white;
+  color: #607d8b;
+  text-align: center;
+  flex-grow: 1;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+}
+
+.tab-bar a:hover {
+  border-bottom: 3px solid #9648dfde;
+  background-color: #9648df18;
+}
+
+div.Iphone12 .product {
+  display: grid;
+  grid-template-columns: 0.9fr 1fr;
+  margin: 39px auto -20px auto;
+  padding: 4.5em 0;
+  min-width: 600px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+div.Iphone12 .product .product__photo {
+  position: relative;
+  width: 79%;
+  margin: 0px 83px;
+  height: 507px;
+}
+
+div.Iphone12 .product .product__photo .photo-container {
+  position: absolute;
+  left: -2.5em;
+  display: grid;
+  grid-template-rows: 1fr;
+  width: 84%;
+  height: 101%;
+  border-radius: 6px;
+  box-shadow: 0px 0px 22px 6px #80808066;
+}
+
+div.Iphone12 .product .product__photo .photo-container .photo-main {
+  border-radius: 6px 6px 0 0;
+  background-color: #f5f5f5bb;
+}
+
+div.Iphone12 .product .product__photo .photo-container .photo-main img {
+  position: absolute;
+  left: 0px;
+  top: 1px;
+  border-radius: 3px;
+  width: 423px;
+  height: 81%;
+}
+
+div.Iphone12 .product .product__photo .photo-container .photo-album {
+  padding: 11px 0px;
+  border-radius: 0 0 6px 6px;
+  width: 100%;
+  background-color: #efefef;
+}
+
+div.Iphone12 .product .product__photo .photo-container .photo-album ul {
+  display: flex;
+  list-style: none;
+  text-align: center;
+  padding: 0px;
+  justify-content: center;
+}
+
+div.Iphone12 .product .product__photo .photo-container .photo-album li {
+  padding: 0px;
+  border: 1px solid #a6a6a6;
+  border-radius: 3px;
+  text-align: center;
+  margin: 0px 7px;
+}
+
+div.Iphone12 .product .product__photo .photo-container .photo-album li img {
+  vertical-align: middle;
+  border-style: none;
+  width: 56px;
+  height: 55px;
+  border-radius: 3px;
+}
+
+div.Iphone12 .product .product__info {
+  padding: 0.8em 0;
+  padding: 1.8em 30px;
+  margin: 0px 177px;
+  width: 356px;
+  height: 537px;
+}
+
+div.Iphone12 .product .product__info .title h1 {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+div.Iphone12 .product .product__info .title span {
+  font-size: 0.7em;
+  color: #a6a6a6;
+}
+
+div.Iphone12 .product .product__info .price {
+  margin: 0px;
+  color: #102ad2;
+  font-size: 1.2em;
+}
+
+div.Iphone12 .product .product__info .price span {
+  padding-left: 0px;
+  font-size: 2.9em;
+}
+
+div.Iphone12 .product .product__info .variant {
+  margin-top: 14px;
+}
+
+div.Iphone12 .product .product__info .variant .btn-group {
+  margin: 0px auto;
+}
+
+div.Iphone12 .product .product__info .variant .btn-group label {
+  width: 27px;
+  height: 26px;
+  border-radius: 50%;
+  margin: auto 10px;
+}
+
+div.Iphone12 .product .product__info .variant .btn-group label input {
+  width: 0px;
+}
+
+div.Iphone12 .product .product__info .variant h3 {
+  margin-bottom: 0px;
+  font-size: 26px;
+  font-weight: 900;
+}
+
+div.Iphone12 .product .product__info li:not(:first-child) {
+  margin-left: 0.1em;
+}
+
+div.Iphone12 .product .description {
+  margin: 2em 0;
+}
+
+div.Iphone12 .product .description h3 {
+  margin-bottom: 4px;
+  font-size: 26px;
+  font-weight: 900;
+}
+
+div.Iphone12 .product .description ul {
+  font-size: 0.8em;
+  list-style: none;
+  margin-left: 1em;
+}
+
+div.Iphone12 .product .description li {
+  text-indent: -0.6em;
+  margin-bottom: 0.5em;
+}
+
+div.Iphone12 .product .description li::before {
+  content: "\2022";
+  color: #102ad2;
+  font-weight: 900;
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  margin-left: 0em;
+}
+
+div.Iphone12 .product .buy--btn {
+  padding: 1.5em 3.1em;
+  border: none;
+  border-radius: 7px;
+  font-size: 0.8em;
+  font-weight: 700;
+  letter-spacing: 1.3px;
+  color: #fff;
+  background-color: #102ad2;
+  box-shadow: 2px 2px 25px -7px #4c4c4c;
+  cursor: pointer;
+}
+
+div.Iphone12 .product .buy--btn:active {
+  transform: scale(0.97);
+}
+
+.btn span.glyphicon {
+  opacity: 0;
+}
+
+.btn.active span.glyphicon {
+  opacity: 1;
+}
+
+div.register {
+  width: 100%;
+  padding-top: 60px;
+  padding-bottom: 100px;
+}
+
+div.register .register-in {
+  height: 531px;
+  width: 440px;
+  margin-top: 35px;
+  background-size: cover;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5px;
+  box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
+}
+
+div.register .register-in .register-title {
+  padding-top: 11px;
+  text-align: center;
+}
+
+div.register .register-in .register-title h2 {
+  font-size: 20px;
+  color: #c3c3c3;
+}
+
+div.register .register-in .form-group {
+  margin-top: 24px;
+}
+
+div.register .register-in .form-group label {
+  margin-right: 20px;
+  margin-top: 23px;
+}
+
+div.register .register-in .form-group label h6 {
+  font-size: 12px;
+  color: #afafafc7;
+}
+
+div.register .register-in .form-group input {
+  display: block;
+  width: 91%;
+  height: calc(2.25rem + 2px);
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: center;
+  margin: -7px 20px;
+  background-color: #f9f9f9;
+  background-clip: padding-box;
+  border-radius: .25rem;
+  transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+div.register .register-in .form-group button {
+  margin: 33px auto;
+  width: 402px;
+  background-color: #e907ff;
+  border: 1px solid #afaaaa;
+}
+
+div.register .invalid {
+  border: 1px solid red !important;
+  box-shadow: 0 0 5px red !important;
+  background-color: lightpink !important;
+}
+
+div.register .invalidtwo {
+  border: 1px solid red !important;
+  box-shadow: 0 0 5px red !important;
+  background-color: lightpink !important;
 }
 
 div.header {
   width: 100%;
   position: fixed;
-  background-color: #fbff00;
+  background: white;
+  background: linear-gradient(90deg, white 0%, #d669ff 100%);
   z-index: 100;
+  border-bottom: 2px solid #9648dfde;
   top: 0px;
 }
 
 div.header nav {
-  height: 92px;
+  width: 89%;
+  height: 81px;
+  right: 88px;
 }
 
 @font-face {
@@ -615,6 +1335,10 @@ div.header nav {
 }
 
 body {
-  background-color: red;
+  background-color: white;
+  direction: rtl;
+  margin: 0px 0px;
+  padding: 0px 0px;
+  text-align: unset !important;
 }
 /*# sourceMappingURL=main.css.map */

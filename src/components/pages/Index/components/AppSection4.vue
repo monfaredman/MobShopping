@@ -2,15 +2,15 @@
   <div class="H-section">
     <div class="H-title">
       <p>هدفون،هدست وهندزفری</p>
-      <img class="img-fluid" src="../../../../assets/Image/img-32.png" alt="" />
+      <img class="img-fluid" src="../../../../assets/Image/charger.png" alt="" />
     </div>
     <div class="H-cards">
-      <div v-for="item in 6" :key="item" class="card">
+      <div v-for="item in 5" :key="item" class="card">
         <div class="card-header">
           <a href=""
             ><img
               class="card-img img-fluid "
-              src="../../../../assets/Image/img-24.jpg"
+              src="../../../../assets/Image/img-31.jpg"
               alt=""
           /></a>
         </div>

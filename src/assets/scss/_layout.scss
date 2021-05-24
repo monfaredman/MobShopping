@@ -2,11 +2,16 @@
 div.header{
   width: 100%;
   position: fixed;
-  background-color: #fbff00;
+  // background-color: #ffffff;
+  background: rgb(255,255,255);
+background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(214,105,255,1) 100%);
   z-index: 100;
+  border-bottom: 2px solid #9648dfde;
   top: 0px;
   nav{
-    height: 92px;
+    width: 89%;
+    height: 81px;
+    right: 88px;
   }
 }
 

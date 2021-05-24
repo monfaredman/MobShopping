@@ -10,6 +10,7 @@
           :key="item"
           class="card"
         >
+                <router-link to="Iphone12">
           <div class="card-header">
             <a href=""
               ><img
@@ -24,6 +25,7 @@
           <div class="card-footer">
             <h5>۵۴,۹۹۰,۰۰۰ تومان</h5>
           </div>
+                  </router-link>
         </div>
       </div>
     </div>

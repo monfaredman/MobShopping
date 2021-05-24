@@ -1,31 +1,35 @@
-<template> 
-<div class="col-12">
-
-<div class="col-12">
-
-  <span class="breadcrumb col-12" > 
-  <li class="breadcrumb-item"><router-link to="/"><a href="" >صفحه اصلی</a></router-link></li>
-  <li class="breadcrumb-item"><router-link to="/mobile"><a href="" >موبایل</a></router-link> </li>
-</span>
-</div>
-<div class="d-flex justify-content-start bg-light">
-<li class="list-unstyled"><p>مرتب سازی بر اساس:</p></li>
-          <a class="btn btn-success m-auto" @click="selectedComponent='app-filter-1'">پرفروش‌ترین</a>
-          <a class="btn btn-success m-auto" @click="selectedComponent='app-filter-2'">مرتبط‌ترین</a>
-          <a class="btn btn-success m-auto" @click="selectedComponent='app-filter-1'">پربازدیدترین</a>
-          <a class="btn btn-success m-auto" @click="selectedComponent='app-filter-2'">جدیدترین</a>
-          <a class="btn btn-success m-auto" @click="selectedComponent='app-filter-1'">ارزان‌ترین</a>
-</div>
-
-          <keep-alive>
-            <component :is="selectedComponent">
-              <template v-if="selectedComponent=='app-filter-1'">
-              </template>
-
-              <template v-if="selectedComponent=='app-filter-2'">
-              </template>
-            </component>
-          </keep-alive>
+<template>
+    <div class="AppMobile">
+      <div class="AppMobile-title">
+        <ul class="tab-bar">
+          <a class="tab wave dark">APPLE</a>
+          <a class="tab wave dark">SAMSUNG</a>
+          <a class="tab wave dark">HUAWEI</a>
+          <a class="tab wave dark">SONY</a>
+          <a class="tab wave dark">NOKIA</a>
+          <div class="indicator"></div>
+        </ul>
+      </div>
+      <div class="AppMobile-cards">
+        <div v-for="item in 25" :key="item" class="card">
+          <div class="card-header">
+            <a href=""
+              ><img
+                class="card-img img-fluid "
+                src="../../assets/Image/img-24.jpg"
+                alt=""
+            /></a>
+          </div>
+          <div class="card-body">
+            <h6>
+              iPhone 12 Pro Max A2412
+            </h6>
+          </div>
+          <div class="card-footer">
+            <h5>۴۵,۵۰۰ تومان</h5>
+          </div>
+        </div>
+      </div>
     </div>
 </template>
 
@@ -41,17 +45,9 @@ export default {
 
   components: {
     appFilter1: AppFilter1,
-    appFilter2: AppFilter2,
+    appFilter2: AppFilter2
   }
 };
 </script>
 
-<style>
-    #card-one:hover {
-  background-color: white;
-  animation-name: zoom;
-  animation-duration: 999999999900000s;
-  animation-delay: 0s;
-  box-shadow: 0px -1px 35px -6px ;
-}
-</style>
+<style></style>

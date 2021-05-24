@@ -2,15 +2,15 @@
   <div class="bag-section">
     <div class="bag-title">
       <p>کیف و کاور گوشی</p>
-      <img class="img-fluid" src="../../../../assets/Image/img-32.png" alt="" />
+      <img class="img-fluid" src="../../../../assets/Image/shopping-bag.png" alt="" />
     </div>
     <div class="bag-cards">
-      <div v-for="item in 6" :key="item" class="card">
+      <div v-for="item in 4" :key="item" class="card">
         <div class="card-header">
           <a href=""
             ><img
               class="card-img img-fluid "
-              src="../../../../assets/Image/img-24.jpg"
+              src="../../../../assets/Image/img-30.jpg"
               alt=""
           /></a>
         </div>
