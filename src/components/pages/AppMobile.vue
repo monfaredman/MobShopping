@@ -12,6 +12,7 @@
       </div>
       <div class="AppMobile-cards">
         <div v-for="item in 25" :key="item" class="card">
+          <router-link to="/mobile/apple/iphone12/payment"></router-link>
           <div class="card-header">
             <a href=""
               ><img

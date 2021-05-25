@@ -10,7 +10,7 @@
           :key="item"
           class="card"
         >
-                <router-link to="Iphone12">
+                <router-link to="/mobile/apple/iphone12">
           <div class="card-header">
             <a href=""
               ><img

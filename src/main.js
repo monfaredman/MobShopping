@@ -35,8 +35,6 @@ Vue.component("app-iphone-12", Iphone12);
 import VueRouter from "vue-router";
 import { Routes } from "./Routes";
 
-
-
 Vue.use(VueRouter);
 const router = new VueRouter({ routes: Routes, mode: "history" });
 // VueResource
@@ -44,12 +42,9 @@ import VueResource from "vue-resource";
 Vue.use(VueResource);
 Vue.http.options.root = "https://6070339a85c3f0001746f9b5.mockapi.io/";
 
-
 new Vue({
   el: "#app",
   store,
   router,
   render: h => h(App)
 });
-
- 

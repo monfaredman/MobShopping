@@ -3,19 +3,8 @@
     <div class="register-in">
       <form action="" class="form-group ">
         <div class=" register-box">
-          <div class=" register-title"><h2>ثبت‌نام</h2></div>
+          <div class=" register-title"><h2>ورود</h2></div>
           <div class="form-group">
-            <label class=""><h6 class="">نام کاربری</h6></label>
-            <input
-              type="text"
-              class="form-control"
-              v-model="name"
-              @input="$v.name.$touch()"
-              :class="{ invalid: $v.name.$error }"
-            />
-            <p v-if="!$v.name.required && $v.name.$dirty">
-              لطفا نام کاربری را وارد کنید
-            </p>
             <label><h6>آدرس ایمیل</h6></label>
             <input
               type="email"
@@ -70,11 +59,10 @@
                   <button
                   type="submit"
                   class="btn btn-success btn-block mb-5"
-                  @click.prevent="RegisterUser()"
-                  :disabled="$v.$invalid"
                 >
+                <router-link to="Register">
                 حساب  ایجاد
-                </button>
+                </router-link></button>
               </div>
             </div>
           </div>

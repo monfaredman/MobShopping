@@ -73,7 +73,8 @@
               <li>حافظه داخلی ۱۲۸ گیگ</li>
             </ul>
           </div>
-          <button class="buy--btn">ارسال سفارش</button>
+          <router-link to="/mobile/apple/iphone12/payment">
+          <button class="buy--btn"> ارسال سفارش</button></router-link>
         </div>
       </section>
     </div>

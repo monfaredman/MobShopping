@@ -67,14 +67,13 @@
                 >
                   ایجاد حساب
                 </button>
-                  <button
+              <button
                   type="submit"
                   class="btn btn-success btn-block mb-5"
-                  @click.prevent="RegisterUser()"
-                  :disabled="$v.$invalid"
                 >
-                 ورود
-                </button>
+                <router-link to="Register">
+               ورود
+                </router-link></button>
               </div>
             </div>
           </div>
