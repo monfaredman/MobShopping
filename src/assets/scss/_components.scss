@@ -8,15 +8,11 @@ div.brand-header {
   margin: auto auto;
 
   li {
+    font-size: 127px;
     list-style: none;
     display: inline-block;
     text-align: center;
     margin: -22px auto;
-    .svg-inline--fa.fa-w-18 {
-      height: 129px;
-      width: 137px;
-      color: gray;
-    }
     a {
       text-decoration: none;
     }
@@ -28,8 +24,8 @@ div.brand-header {
     display: inline-block;
     position: absolute;
     font-size: 13px;
-    right: 50px;
-    top: 30px;
+    right: 53px;
+    top: 27px;
   }
 }
 
@@ -442,7 +438,6 @@ div.question-section {
 //start AppFooter
 
 footer {
-  background-image: url("../Image/wave.svg");
   border: 2px solid #c592b7;
   width: 100%;
   .top-section-footer {
@@ -1218,7 +1213,9 @@ div.container-payment {
     .pricing {
       border: 2px solid #304ffe;
       background-color: #f2f5ff;
+      margin: 0px 20px;
       display: flex;
+      padding: 10px 14px;
       justify-content: space-between;
       .images {
         display: flex;
@@ -1228,57 +1225,62 @@ div.container-payment {
         .business {
           display: flex;
           align-items: center;
+          padding: 0px 12px;
           span {
-            font-size: 20px;
+            font-size: 15px;
+            color: #9d00ff;
             font-weight: 500;
-          }
-          .plan {
-            color: #aba4a4;
           }
         }
       }
       .dolla {
-        sup {
-          font-size: 16px;
-          color: #6b6b6f;
-        }
+        padding: 23px;
         .amount {
-          font-size: 50px;
-          font-weight: 500;
-        }
-        .year {
-          font-size: 20px;
-          color: #6b6b6f;
-          margin-top: 19px;
+          font-size: 40px;
+    font-weight: 500;
         }
       }
     }
     .detail {
-      font-size: 22px;
+      font-size: 20px;
       font-weight: 500;
+      text-align: center;
+      margin: 36px 0px;
     }
     .credit {
       display: flex;
       justify-content: space-between;
+      margin: 31px 19px;
       .rounded {
         display: flex;
         align-items: center;
+        img{
+          width: 100px;
+          height: 74px;
+        }
 
         .business {
           display: flex;
           align-items: center;
+          span.business{
+            display: flex;
+            align-items: center;
+            margin: 0px 10px;
+            font-size: 16px;
+            line-height: 34px;
+          }
+          span.plan{
+            font-size: 17px;
+    font-weight: 700;
+    color: #59d1d1;
+          }
         }
       }
-
-      // .ccv {
-      //   height: 44px;
-      //   width: 73px;
-      //   border: 2px solid #eee;
-      // }
-      // .ccv:focus {
-      //   box-shadow: none;
-      //   border: 2px solid #304ffe;
-      // }
+      .btn-dargah {
+        width: 35%;
+        margin: auto;
+        height: 80%;
+      }
     }
     .email {
       .email-text {
@@ -1290,12 +1292,10 @@ div.container-payment {
         border: 2px solid #304ffe;
       }
     }
-    .payment-button {
-      button {
-        height: 70px;
-        font-size: 20px;
-      }
-    }
+  }
+  .card:hover{
+    box-shadow: 0px 6px 13px 0px #9c9c9c;
+    transform: none;
   }
 }
 //end FinalPayment

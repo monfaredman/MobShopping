@@ -1,5 +1,5 @@
 <template>
- <div class="container container-payment">
+  <div class="container container-payment">
     <div class="card">
       <div class="heading">
         <h4>پرداخت</h4>
@@ -15,69 +15,39 @@
             <span class=""> iPhone 12 Pro Max A2412</span>
           </div>
         </div>
-
         <div class="dolla flex-row">
-          <sup class="font-weight-bold">تومان</sup>
           <span class="amount">۲۰‍‍‍‍‍٬۰۰۰٬۰۰۰</span>
-          <span class="year font-weight-bold">/ year</span>
+          <span class="font-weight-bold">تومان</span>
         </div>
-
       </div>
-      <span class="detail">Payment details</span>
-      <div
-        class="credit rounded mt-4 d-flex "
-      >
+      <span class="detail">روش های پرداخت</span>
+      <div class="credit rounded">
         <div class="rounded flex-row">
-          <img
-            src="../../../assets/Image/img-10.jpg"
-            class=""
-            width="70"
-          />
+          <img src="../../../assets/Image/img-25.png"  width="70" />
           <div class="business flex-column">
-            <span class="business">Credit Card</span>
-            <span class="plan">1234 XXXX XXXX 2570</span>
+            <span class="business">پرداخت از طریق</span>
+            <span class="plan">بانک سامان</span>
           </div>
         </div>
-        <div>
-          <input type="text" class="form-control cvv" placeholder="CVC" />
-        </div>
+        <button class="btn btn-primary btn-block btn-dargah">
+          رفتن به درگاه پرداخت
+        </button>
       </div>
-      <div
-        class="credit rounded mt-4 d-flex "
-      >
+      <div class="credit rounded">
         <div class="rounded flex-row">
-          <img
-            src="../../../assets/Image/img-10.jpg"
-            class=""
-            width="70"
-          />
+          <img src="../../../assets/Image/img-26.png"  width="70" />
           <div class="business flex-column">
-            <span class="business">Credit Card</span>
-            <span class="plan">1234 XXXX XXXX 2570</span>
+            <span class="business">پرداخت از طریق</span>
+            <span class="plan">بانک زرین پال</span>
           </div>
         </div>
-        <div>
-          <input type="text" class="form-control cvv" placeholder="CVC" />
-        </div>
-      </div>
-      <h6 class="">ADD PAYMENT METHOD</h6>
-      <div class="email">
-        <input
-          type="text"
-          class="form-control email-text"
-          placeholder="Email Address"
-        />
-      </div>
-      <div class="payment-butto">
-        <button class="btn btn-primary btn-block ">
-          Proceed to payment <i class="fa fa-long-arrow-right"></i>
+        <button class="btn btn-primary btn-block  btn-dargah">
+          رفتن به درگاه پرداخت
         </button>
       </div>
     </div>
   </div>
 </template>
 <script>
-export default {
-
-}
+export default {};
 </script>
