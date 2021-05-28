@@ -2,7 +2,7 @@
   <div class="header">
     <nav class="navbar-header navbar navbar-expand-lg">
       <div class="brand-header">
-        <router-link to="/">
+        <router-link to="/" id="link">
           <li><i class="fab fa-android "></i></li>
           <h5>MobileShop</h5>
         </router-link>
@@ -30,13 +30,13 @@
               </router-link>
 
               <ul class="dropdown-menu ">
-                <router-link to="/apple">
+                <router-link to="/mobile/apple">
                   <li class="dropdown-item">
                     <a class="btn nav-link " data-toggle="dropdown">اپل</a>
                   </li></router-link
                 >
 
-                <router-link to="/samsong">
+                <router-link to="/mobile/apple">
                   <li class="dropdown-item">
                     <a class="nav-link btn" data-toggle="dropdown">سامسونگ</a>
                   </li></router-link
@@ -54,9 +54,11 @@
               </router-link>
 
               <ul class="dropdown-menu dropdown-menu2">
+                <router-link to="/mobile/apple">
                 <li>
                   <a href="" class="dropdown-item ">کیف و کاور گوشی</a>
                 </li>
+                </router-link>
                 <li>
                   <a href="" class="dropdown-item ml-2">پاور بانک </a>
                 </li>

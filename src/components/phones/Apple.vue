@@ -1,54 +1,58 @@
-<template> 
-<div class="col-12">
-  <span class="breadcrumb"> 
-  <li class="breadcrumb-item"><router-link to="/"><a href="" >صفحه اصلی</a></router-link></li>
-  <li class="breadcrumb-item"><router-link to="/mobile"><a href="" >موبایل</a></router-link> </li>
-  <li class="breadcrumb-item"><router-link to="/apple"><a href="" >اپل</a></router-link> </li>
-</span>
-<div class="d-flex justify-content-start bg-light">
-<li class="list-unstyled"><p>مرتب سازی بر اساس:</p></li>
-          <a class="btn btn-success m-auto" @click="selectedComponent='app-filter-1'">پرفروش‌ترین</a>
-          <a class="btn btn-success m-auto" @click="selectedComponent='app-filter-2'">مرتبط‌ترین</a>
-          <a class="btn btn-success m-auto" @click="selectedComponent='app-filter-1'">پربازدیدترین</a>
-          <a class="btn btn-success m-auto" @click="selectedComponent='app-filter-2'">جدیدترین</a>
-          <a class="btn btn-success m-auto" @click="selectedComponent='app-filter-1'">ارزان‌ترین</a>
-</div>
-
-          <keep-alive>
-            <component :is="selectedComponent">
-              <template v-if="selectedComponent=='app-filter-1'">
-              </template>
-
-              <template v-if="selectedComponent=='app-filter-2'">
-              </template>
-            </component>
-          </keep-alive>
+<template>
+  <div class="AppMobile">
+    <div class="AppMobile-title">
+      <ul class="tab-bar">
+        <router-link tag="li" to="/mobile/apple">
+          <a class="tab wave dark">APPLE</a>
+        </router-link>
+        <router-link tag="li" to="/mobile/apple">
+          <a class="tab wave dark">SAMSUNG</a>
+        </router-link>
+        <router-link tag="li" to="/mobile/apple">
+          <a class="tab wave dark">HUAWEI</a>
+        </router-link>
+        <router-link tag="li" to="/mobile/apple">
+          <a class="tab wave dark">SONY</a>
+        </router-link>
+        <router-link tag="li" to="/mobile/apple">
+          <a class="tab wave dark">NOKIA</a>
+        </router-link>
+      </ul>
     </div>
+    <div class="AppMobile-cards">
+      <div v-for="item in 25" :key="item" class="card">
+        <router-link to="/mobile/apple/iphone12">
+        <div class="card-header">
+          <a href=""
+            ><img
+              class="card-img img-fluid "
+              src="../../assets/Image/img-24.jpg"
+              alt=""
+          /></a>
+        </div>
+        <div class="card-body">
+          <h6>
+            iPhone 12 Pro Max A2412
+          </h6>
+        </div>
+        <div class="card-footer">
+          <h5>۴۵,۵۰۰ تومان</h5>
+        </div>
+        </router-link>
+      </div>
+    </div>
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import AppFilter1 from "../pages/Index/components/AppFilter1";
-import AppFilter2 from "../pages/Index/components/AppFilter2";
 export default {
   data() {
     return {
-      selectedComponent: "app-filter-1"
     };
   },
 
-  components: {
-    appFilter1: AppFilter1,
-    appFilter2: AppFilter2,
-  }
 };
 </script>
 
-<style>
-    #card-one:hover {
-  background-color: white;
-  animation-name: zoom;
-  animation-duration: 999999999900000s;
-  animation-delay: 0s;
-  box-shadow: 0px -1px 35px -6px ;
-}
-</style>
+<style></style>

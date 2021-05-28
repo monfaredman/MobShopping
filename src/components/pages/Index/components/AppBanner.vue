@@ -13,18 +13,19 @@
     </ol>
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <a href=""
-          ><img
+        <a>
+          <img
             src="../../../../assets/Image/img-51.jpg"
             class="d-block w-100"
             alt="First slide"
-        /></a>
+          />
+        </a>
         <div class="carousel-caption d-none d-md-block">
-          <a href="" style="text-decoration:none;color:white">
-            <h4 class=" d-inline-block">Iphone 12 pro max</h4>
-            <br />
-            <p class="">سریع انفجار کن</p>
-          </a>
+          <router-link to="/mobile/apple/iphone12" id="link">
+              <h4 class="text-light d-inline-block">Iphone 12 pro max</h4>
+              <br />
+              <p class="text-light">سریع انفجار کن</p>
+          </router-link>
         </div>
       </div>
 

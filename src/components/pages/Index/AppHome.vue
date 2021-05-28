@@ -1,13 +1,14 @@
 <template>
   <div>
-<app-banner></app-banner>
-<app-section-1></app-section-1>
-<app-section-8></app-section-8>
-<app-section-2></app-section-2>
-<app-section-6></app-section-6>
-<app-section-3></app-section-3>
-<app-section-4></app-section-4>
-<app-section-5></app-section-5>
+    <app-banner></app-banner>
+    <app-section-1></app-section-1>
+    <app-section-8></app-section-8>
+    <app-section-2></app-section-2>
+    <app-section-6></app-section-6>
+    <app-section-3></app-section-3>
+    <app-section-4></app-section-4>
+    <app-section-5></app-section-5>
+    <not-found></not-found>
   </div>
 </template>
 
@@ -20,9 +21,10 @@ import AppSection4 from "./components/AppSection4.vue";
 import AppSection5 from "./components/AppSection5.vue";
 import AppSection6 from "./components/AppSection6.vue";
 import AppSection8 from "./components/AppSection8";
+import NotFound404 from "./components/NotFound404";
 
 export default {
-   components: {
+  components: {
     appBanner: AppBanner,
     appSection1: AppSection1,
     appSection2: AppSection2,
@@ -31,13 +33,11 @@ export default {
     appSection5: AppSection5,
     appSection6: AppSection6,
     appSection8: AppSection8,
+    notFound: NotFound404
   },
 
-  data () {
-    return {
-
-    }
-  },
+  data() {
+    return {};
+  }
 };
-
 </script>

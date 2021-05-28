@@ -1,4 +1,6 @@
 <template>
+
+
   <main class="page">
     <section class="shopping-cart dark">
       <div class="container">
@@ -184,5 +186,18 @@
   </main>
 </template>
 <script>
-export default {};
+export default {
+beforeRouteLeave (to, from, next) {
+  const answer = window.confirm('Do you really want to leave?')
+  if (answer) {
+    next()
+  } else {
+    next(false)
+  }
+}
+
+};
 </script>
+
+
+

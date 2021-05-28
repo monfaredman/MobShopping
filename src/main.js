@@ -2,9 +2,11 @@
 import Vue from "vue";
 import App from "./App.vue";
 import { store } from "./Store/Store";
+
 // Vuelidate
 import Vuelidate from "vuelidate";
 Vue.use(Vuelidate);
+
 // Pages
 import AppHome from "./components/pages/Index/AppHome.vue";
 import AppMobile from "./components/pages/AppMobile.vue";
@@ -12,12 +14,14 @@ import AppJanebi from "./components/pages/AppJanebi.vue";
 import AppNotFound from "./components/pages/AppNotFound.vue";
 import Login from "./components/pages/Acount/Login.vue";
 import Register from "./components/pages/Acount/Register.vue";
+import NotFound404 from "./components/pages/Index/components/NotFound404.vue";
 Vue.component("app-home", AppHome);
 Vue.component("app-mobile", AppMobile);
 Vue.component("app-janebi", AppJanebi);
 Vue.component("app-not-found", AppNotFound);
 Vue.component("login", Login);
 Vue.component("register", Register);
+Vue.component("not-found", NotFound404);
 // shared
 import AppFooter from "./components/shared/AppFooter.vue";
 import AppHeader from "./components/shared/AppHeader.vue";
@@ -36,11 +40,23 @@ import VueRouter from "vue-router";
 import { Routes } from "./Routes";
 
 Vue.use(VueRouter);
-const router = new VueRouter({ routes: Routes, mode: "history" });
-// VueResource
-import VueResource from "vue-resource";
-Vue.use(VueResource);
-Vue.http.options.root = "https://6070339a85c3f0001746f9b5.mockapi.io/";
+const router = new VueRouter({
+  routes: Routes,
+  mode: "history",
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    } else {
+      return { x: 0, y: 0 };
+    }
+    if (to.hash) {
+      return {
+        selector: to.hash
+      };
+    }
+    router.beforeEach((to, from, next) => {});
+  }
+});
 
 new Vue({
   el: "#app",

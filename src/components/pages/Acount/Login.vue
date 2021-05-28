@@ -51,18 +51,15 @@
                 <button
                   type="submit"
                   class="btn btn-success btn-block"
-                  @click.prevent="RegisterUser()"
-                  :disabled="$v.$invalid"
+                  @click="postPost()"
                 >
                   ورود
                 </button>
-                  <button
-                  type="submit"
-                  class="btn btn-success btn-block mb-5"
-                >
-                <router-link to="Register">
-                حساب  ایجاد
-                </router-link></button>
+                <router-link to="/register">
+                  <button type="submit" class="btn btn-success btn-block mb-5">
+                    ایجاد حساب
+                  </button>
+                </router-link>
               </div>
             </div>
           </div>
@@ -72,6 +69,7 @@
   </div>
 </template>
 <script>
+import axios from "axios";
 import {
   required,
   maxLength,
@@ -89,13 +87,17 @@ export default {
     };
   },
   methods: {
-    RegisterUser() {
-      const register = {
-        name: this.name,
-        email: this.email,
-        password: this.password
-      };
-      this.$store.dispatch("RegisterUser", register);
+    postPost() {
+      axios
+        .post(`https://6070339a85c3f0001746f9b5.mockapi.io/users`, {
+          name: this.name,
+          email: this.email,
+          password: this.password
+        })
+        .then(result => {
+          console.log(result.data);
+          alert("ورود با موفقیت انجام شد");
+        });
     }
   },
   validations: {
@@ -105,24 +107,24 @@ export default {
     email: {
       required,
       email,
-      maxLength: maxLength(100),
-      unique: function(val) {
-        if (val === "") return true;
+      maxLength: maxLength(100)
+      // unique: function(val) {
+      //   if (val === "") return true;
 
-        return this.$http
-          .get("users/", {
-            params: { email: val }
-          })
-          .then(
-            response => {
-              console.log(response);
-              return !response.body.isExist;
-            },
-            error => {
-              console.log(error);
-            }
-          );
-      }
+      //   return this.$http
+      //     .get("users/", {
+      //       params: { email: val }
+      //     })
+      //     .then(
+      //       response => {
+      //         console.log(response);
+      //         return !response.body.isExist;
+      //       },
+      //       error => {
+      //         console.log(error);
+      //       }
+      //     );
+      // }
     },
     password: {
       minLength: minLength(6),

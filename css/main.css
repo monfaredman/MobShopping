@@ -927,7 +927,7 @@ div.AppMobile {
 
 div.AppMobile .AppMobile-title {
   margin: 98px auto 0px auto;
-  width: 65%;
+  width: 61%;
 }
 
 div.AppMobile .AppMobile-title p {
@@ -1022,16 +1022,20 @@ div.AppMobile .AppMobile-cards .card .card-footer h5 {
   box-shadow: 0 1px 3px gray, 0 1px 2px gray;
 }
 
-.tab-bar .tab {
-  width: 150px;
-  padding: 20px 0;
-  background: white;
+.tab-bar li {
+  height: 51px;
+  text-align: center;
+}
+
+.tab-bar li .tab {
+  width: 176px;
+  padding: 15px 56px;
   color: #607d8b;
   text-align: center;
-  flex-grow: 1;
   cursor: pointer;
   position: relative;
   user-select: none;
+  top: 12px;
 }
 
 .tab-bar a:hover {
@@ -1602,6 +1606,31 @@ div.container-payment .card .email .email-text:focus {
 div.container-payment .card:hover {
   box-shadow: 0px 6px 13px 0px #9c9c9c;
   transform: none;
+}
+
+div.not-found {
+  width: 100%;
+  background-color: white;
+  margin: 193px auto;
+}
+
+div.not-found div {
+  width: 60%;
+  background-color: #8080801c;
+  border-radius: 10px;
+  text-align: center;
+  padding: 50px;
+  margin: auto;
+}
+
+div.not-found div h1 {
+  text-align: center;
+  font-size: 117px;
+}
+
+div.not-found div h5 {
+  text-align: center;
+  font-size: 80px;
 }
 
 div.header {

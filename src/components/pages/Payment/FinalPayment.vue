@@ -41,7 +41,7 @@
             <span class="plan">بانک زرین پال</span>
           </div>
         </div>
-        <button class="btn btn-primary btn-block  btn-dargah">
+        <button class="btn btn-primary btn-block  btn-dargah" @click="postPost()">
           رفتن به درگاه پرداخت
         </button>
       </div>
@@ -49,5 +49,25 @@
   </div>
 </template>
 <script>
-export default {};
+import axios from "axios";
+export default {
+  created() {
+    let post = {
+      title: 'foo',
+      body: 'bar',
+      userId: 1
+    };
+    axios.post("https://6070339a85c3f0001746f9b5.mockapi.io/users",  post).then((result) => {
+      console.log(result);
+    });
+  },
+  beforeRouteLeave (to, from, next) {
+  const answer = window.confirm('Do you really want to leave?')
+  if (answer) {
+    next()
+  } else {
+    next(false)
+  }
+}
+};
 </script>
