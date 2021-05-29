@@ -3,7 +3,8 @@
     <app-header></app-header>
     <transition
       enter-active-class="animate__zoomIn"
-      leave-active-class="animate__fadeOut" appear
+      leave-active-class="animate__fadeOut"
+      appear
     >
       <router-view> </router-view>
     </transition>
@@ -12,9 +13,12 @@
 </template>
 
 <script>
+import AppFooter from "./Pages/Shared/AppFooter";
+import AppHeader from "./Pages/Shared/AppHeader";
 export default {
-  data() {
-    return {};
+  component: {
+    appFooter: AppFooter,
+    appHeader: AppHeader
   }
 };
 </script>

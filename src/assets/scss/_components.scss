@@ -441,7 +441,6 @@ footer {
   border: 2px solid #c592b7;
   width: 100%;
   .top-section-footer {
-    // background-color: #f4f1f1;
     display: flex;
     width: 90%;
     margin: 0px auto;
@@ -742,10 +741,10 @@ div.AppMobile {
   list-style-type: none;
   padding: 0;
   box-shadow: 0 1px 3px gray, 0 1px 2px gray;
-  li{
+  li {
     height: 51px;
     text-align: center;
-     .tab {
+    .tab {
       width: 176px;
       padding: 15px 56px;
       color: #607d8b;
@@ -754,7 +753,7 @@ div.AppMobile {
       position: relative;
       user-select: none;
       top: 12px;
-  }
+    }
   }
   a:hover {
     border-bottom: 3px solid #9648dfde;
@@ -957,7 +956,6 @@ div.register {
   padding-top: 60px;
   padding-bottom: 100px;
   .register-in {
-    height: 531px;
     width: 440px;
     margin-top: 35px;
     background-size: cover;
@@ -967,18 +965,17 @@ div.register {
     box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.2);
 
     .register-title {
-      padding-top: 11px;
       text-align: center;
       h2 {
         font-size: 20px;
         color: #c3c3c3;
+        margin: 7px auto;
       }
     }
     .form-group {
-      margin-top: 24px;
+      margin-top: 53px;
       label {
-        margin-right: 20px;
-        margin-top: 23px;
+        margin: 18px 20px 3px auto;
         h6 {
           font-size: 12px;
           color: #afafafc7;
@@ -998,22 +995,26 @@ div.register {
         border-radius: 0.25rem;
         transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
       }
-      button {
-        margin: 33px auto;
-        width: 402px;
-        background-color: #e907ff;
-        border: 1px solid #afaaaa;
+      div {
+        margin: 20px auto 0px auto;
+        padding: 1px 0px;
+        button {
+          margin: 0px auto 0px auto;
+          width: 402px;
+          background-color: #e907ff;
+          border: 1px solid #afaaaa;
+        }
+      }
+
+      p {
+        font-size: 11px;
+        color: red;
+        margin: 11px 21px;
       }
     }
   }
 
   .invalid {
-    border: 1px solid red !important;
-    box-shadow: 0 0 5px red !important;
-    background-color: lightpink !important;
-  }
-
-  .invalidtwo {
     border: 1px solid red !important;
     box-shadow: 0 0 5px red !important;
     background-color: lightpink !important;
@@ -1188,30 +1189,25 @@ div.register {
   }
 }
 
-
 //end Payment
-
-
-
 
 //start FinalPayment
 div.container-payment {
   display: flex;
   justify-content: center;
-    margin: 105px auto;
+  margin: 105px auto;
   .card {
     border: none;
     border-radius: 8px;
     box-shadow: 0px 6px 13px 0px #9c9c9c;
     .heading {
-          text-align: center;
-    margin: 16px auto;
+      text-align: center;
+      margin: 16px auto;
       h4 {
         font-size: 23px;
         font-weight: 00;
-            color: #1319ca;
+        color: #1319ca;
       }
-
     }
     .pricing {
       border: 2px solid #304ffe;
@@ -1223,7 +1219,6 @@ div.container-payment {
       .images {
         display: flex;
         align-items: center;
-
 
         .business {
           display: flex;
@@ -1240,7 +1235,7 @@ div.container-payment {
         padding: 23px;
         .amount {
           font-size: 40px;
-    font-weight: 500;
+          font-weight: 500;
         }
       }
     }
@@ -1257,7 +1252,7 @@ div.container-payment {
       .rounded {
         display: flex;
         align-items: center;
-        img{
+        img {
           width: 100px;
           height: 74px;
         }
@@ -1265,17 +1260,17 @@ div.container-payment {
         .business {
           display: flex;
           align-items: center;
-          span.business{
+          span.business {
             display: flex;
             align-items: center;
             margin: 0px 10px;
             font-size: 16px;
             line-height: 34px;
           }
-          span.plan{
+          span.plan {
             font-size: 17px;
-    font-weight: 700;
-    color: #59d1d1;
+            font-weight: 700;
+            color: #59d1d1;
           }
         }
       }
@@ -1296,39 +1291,142 @@ div.container-payment {
       }
     }
   }
-  .card:hover{
+  .card:hover {
     box-shadow: 0px 6px 13px 0px #9c9c9c;
     transform: none;
   }
 }
 //end FinalPayment
 
-
-
 //start 404
-
-
-
 
 div.not-found {
   width: 100%;
   background-color: white;
   margin: 193px auto;
-  div{
+  div {
     width: 60%;
     background-color: #8080801c;
     border-radius: 10px;
     text-align: center;
     padding: 50px;
     margin: auto;
-  h1{
-    text-align: center;
-    font-size: 117px;
-  }
-  h5{
-    text-align: center;
-    font-size: 80px;
-  }
+    h1 {
+      text-align: center;
+      font-size: 117px;
+    }
+    h5 {
+      text-align: center;
+      font-size: 80px;
+    }
   }
 }
 //end 404
+
+//start aboutus
+.demo {
+  margin: 117px auto;
+  width: 100%;
+  .row {
+    background-color: #eaeaea87;
+    border-radius: 10px;
+    .about-box .pic {
+      width: 22%;
+      padding: 20px 0;
+      margin: 33px 6% 0 2%;
+      float: left;
+      position: relative;
+      z-index: 1;
+    }
+    .about-box .pic:before,
+    .about-box .pic:after {
+      content: "";
+      width: 130px;
+      height: 150px;
+      background: #e1c37d;
+      position: absolute;
+      z-index: -1;
+    }
+    .about-box .pic:before {
+      top: -19px;
+      right: -20px;
+    }
+    .about-box .pic:after {
+      bottom: -48px;
+      left: -20px;
+    }
+    .about-box .pic img {
+      width: 108%;
+      height: 309px;
+      border: 3px solid #08000826;
+    }
+
+    .about-box .title {
+      display: block;
+      font-size: 22px;
+      font-weight: 600;
+      color: #000;
+      margin: 0px;
+      text-transform: uppercase;
+      padding-top: 47px;
+      padding-left: 15px;
+      padding-bottom: 19px;
+    }
+
+    .about-box .description {
+      font-size: 16px;
+      color: #000;
+    }
+    .about-box .description:before,
+    .about-box .description:after {
+      font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 17px;
+      color: #e4af34;
+      position: relative;
+    }
+    .about-box .description:before {
+      content: "\f10d";
+      margin-right: 5px;
+      top: 0;
+      left: 0;
+    }
+    .about-box .description:after {
+      content: "\f10e";
+      margin-left: 5px;
+      position: relative;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+//end aboutus
+//start Pagintion
+.wrapper {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -46px;
+  align-items: center;
+  .page-link {
+    position: relative;
+    display: block;
+    color: #673ab7 !important;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #673ab7 !important;
+  }
+  .page-link:hover {
+    z-index: 2;
+    color: #fff !important;
+    background-color: #673ab7;
+    border-color: #024dbc;
+  }
+  .page-link:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: none;
+  }
+}
+//end Pagintion

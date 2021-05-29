@@ -1,0 +1,32 @@
+<template>
+  <div class="bag-section">
+    <div class="bag-title">
+      <p>کیف و کاور گوشی</p>
+      <img class="img-fluid" src="../../assets/Image/shopping-bag.png" alt="" />
+    </div>
+    <div class="bag-cards">
+      <div v-for="item in 4" :key="item" class="card">
+        <div class="card-header">
+          <a href=""
+            ><img
+              class="card-img img-fluid "
+              src="../../assets/Image/img-30.jpg"
+              alt=""
+          /></a>
+        </div>
+        <div class="card-body">
+          <h6>
+            کاور جوی روم مدل JR-BP273 مناسب برای گوشی موبایل اپل iPhone 6 Plus
+          </h6>
+        </div>
+        <div class="card-footer">
+          <h5>۴۵,۵۰۰ تومان</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+<script>
+export default {};
+</script>
+<style></style>
