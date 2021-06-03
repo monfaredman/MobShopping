@@ -1,0 +1,111 @@
+//start FinalPayment
+div.container-payment {
+  display: flex;
+  justify-content: center;
+  margin: 18px auto;
+  .card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0px 6px 13px 0px #9c9c9c;
+    .heading {
+      text-align: center;
+      margin: 16px auto;
+      h4 {
+        font-size: 23px;
+        font-weight: 00;
+        color: #1319ca;
+      }
+    }
+    .pricing {
+      border: 2px solid #304ffe;
+      background-color: #f2f5ff;
+      margin: 0px 20px;
+      display: flex;
+      padding: 10px 14px;
+      justify-content: space-between;
+      .images {
+        display: flex;
+        align-items: center;
+
+        .business {
+          display: flex;
+          align-items: center;
+          padding: 0px 12px;
+          span {
+            font-size: 15px;
+            color: #9d00ff;
+            font-weight: 500;
+          }
+        }
+      }
+      .dolla {
+        padding: 23px;
+        .amount {
+          font-size: 40px;
+          font-weight: 500;
+        }
+      }
+    }
+    .detail {
+      font-size: 24px;
+      font-weight: 500;
+      font-family: "Font Awesome 5 Brands";
+      color: #7c3f63;
+      text-align: center;
+      background-color: #fff8f8e6;
+      margin: 38px 0px -9px 0px;
+    }
+    .credit {
+      display: flex;
+      justify-content: space-between;
+      margin: 36px auto -5px auto;
+      .rounded {
+        display: flex;
+        align-items: center;
+        img {
+          width: 100px;
+          height: 74px;
+        }
+
+        .business {
+          display: flex;
+          align-items: center;
+          span.business {
+            display: flex;
+            align-items: center;
+            margin: 0px 10px;
+            font-size: 16px;
+            line-height: 34px;
+          }
+          span.plan {
+            font-size: 17px;
+            font-weight: 700;
+            color: #59d1d1;
+          }
+        }
+      }
+      .btn-dargah {
+        font-size: 12px;
+        width: 33%;
+        margin: auto;
+        text-align: center;
+        padding: 6px 4px;
+      }
+    }
+    .email {
+      .email-text {
+        height: 55px;
+        border: 2px solid #eee;
+      }
+      .email-text:focus {
+        box-shadow: none;
+        border: 2px solid #304ffe;
+      }
+    }
+  }
+  .card:hover {
+    box-shadow: 0px 6px 13px 0px #9c9c9c;
+    transform: none;
+  }
+}
+//end FinalPayment

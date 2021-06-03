@@ -29,12 +29,12 @@
           رفتن به درگاه پرداخت
         </button>
       </div>
-      <div class="credit rounded">
+      <div class="credit rounded mb-5">
         <div class="rounded flex-row">
           <img src="../../assets/Image/img-26.png" width="70" />
           <div class="business flex-column">
             <span class="business">پرداخت از طریق</span>
-            <span class="plan">بانک زرین پال</span>
+            <span class="plan"> زرین پال</span>
           </div>
         </div>
         <button
@@ -59,7 +59,7 @@ export default {
   created() {
     EventBus.$on("totalMoneyProps", monetBus => {
       this.totalMoney = monetBus;
-      console.log(this.totalMoney);
+      alert(this.totalMoney);
     });
   },
   beforeRouteLeave(to, from, next) {

@@ -1,0 +1,50 @@
+// start appBanner
+div.carousel {
+  margin-top: 0px;
+  .carousel-indicators li {
+    position: relative;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 9px;
+    height: 10px;
+    margin-right: 3px;
+    margin-left: 3px;
+    border-radius: 50px;
+    text-indent: -999px;
+    cursor: pointer;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  .carousel-indicators {
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+    left: 0;
+    z-index: 15;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 18%;
+    list-style: none;
+  }
+  .carousel-caption {
+    h4 {
+      font-family: "Bebas Neue" !important;
+      word-spacing: 15px !important;
+      letter-spacing: 2px !important;
+      font-weight: 100 !important;
+      font-size: 32px !important;
+    }
+    p.text-light {
+      font-family: "Bebas Neue", cursive;
+      word-spacing: 0px;
+      letter-spacing: 1px;
+      font-weight: 100;
+      opacity: 0.8;
+      font-size: 20px;
+    }
+  }
+}
+// end appBanner
