@@ -4,7 +4,7 @@
     <div class="top-section-footer">
       <div class="footer-item-1">
         <router-link to="/login" class="btn btn-info">
-          <a>ورود به حساب کاربری </a>
+          <a class="acount-btn">ورود به حساب کاربری </a>
         </router-link>
         <br />
         <router-link

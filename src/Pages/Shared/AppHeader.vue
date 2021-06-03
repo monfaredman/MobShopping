@@ -1,8 +1,8 @@
 <template>
   <div class="header">
-    <nav class="navbar-header navbar navbar-expand-lg">
+    <nav class="navbar-header navbar navbar-expand-md">
       <div class="brand-header">
-        <router-link to="/" id="link">
+        <router-link to="/" id="link" class="router-brand">
           <li><i class="fab fa-android "></i></li>
           <h5>MobileShop</h5>
         </router-link>
@@ -19,51 +19,83 @@
         </span>
       </button>
 
-      <div class=" collapse navbar-collapse" id="Navbar">
+      <div class="collapse navbar-collapse" id="Navbar">
         <div class="menue-header">
           <div class="navbar-nav mx-auto">
             <div class="dropdown nav-item nav-item-mobile">
-              <router-link to="/mobile">
-                <a class="nav-link dropdown-toggle" data-toggle="dropdown"
-                  >موبایل</a
-                >
+              <router-link
+                to="/mobile"
+                class="nav-link dropdown-toggle first-link"
+                data-toggle="dropdown"
+              >
+                موبایل
               </router-link>
 
               <ul class="dropdown-menu ">
-                <router-link to="/mobile/apple">
-                  <li class="dropdown-item">
-                    <a class="btn nav-link " data-toggle="dropdown">اپل</a>
-                  </li></router-link
-                >
+                <li class="dropdown-item">
+                  <router-link
+                    tag="a"
+                    to="/mobile/apple"
+                    class="btn nav-link second-link"
+                    data-toggle="dropdown"
+                  >
+                    اپل
+                  </router-link>
+                </li>
 
-                <router-link to="/mobile/apple">
-                  <li class="dropdown-item">
-                    <a class="nav-link btn" data-toggle="dropdown">سامسونگ</a>
-                  </li></router-link
-                >
+                <li class="dropdown-item">
+                  <router-link
+                    tag="a"
+                    to="/mobile/apple"
+                    class="btn nav-link second-link"
+                    data-toggle="dropdown"
+                  >
+                    سامسونگ
+                  </router-link>
+                </li>
               </ul>
             </div>
 
-            <div class="dropdown nav-item nav-item-janebi">
-              <router-link to="/janebi">
-                <a
-                  class="nav-link dropdown-toggle dropdown-toggle2"
-                  data-toggle="dropdown"
-                  >لوازم جانبی</a
-                >
+            <div class="dropdown nav-item nav-item-janebi ">
+              <router-link
+                to="/janebi"
+                class="nav-link dropdown-toggle first-link"
+                data-toggle="dropdown"
+              >
+                لوازم جانبی
               </router-link>
 
               <ul class="dropdown-menu dropdown-menu2">
-                <router-link to="/mobile/apple">
-                  <li>
-                    <a href="" class="dropdown-item ">کیف و کاور گوشی</a>
-                  </li>
-                </router-link>
-                <li>
-                  <a href="" class="dropdown-item ml-2">پاور بانک </a>
+                <li class="dropdown-item">
+                  <router-link
+                    tag="a"
+                    to="/mobile/apple"
+                    class="btn nav-link second-link"
+                    data-toggle="dropdown"
+                  >
+                    پاور بانک
+                  </router-link>
                 </li>
-                <li>
-                  <a href="" class="dropdown-item">پایه نگهدارنده گوشی</a>
+
+                <li class="dropdown-item">
+                  <router-link
+                    tag="a"
+                    to="/mobile/apple"
+                    class="btn nav-link second-link"
+                    data-toggle="dropdown"
+                  >
+                    کیف و کاور گوشی
+                  </router-link>
+                </li>
+                <li class="dropdown-item">
+                  <router-link
+                    tag="a"
+                    to="/mobile/apple"
+                    class="btn nav-link second-link"
+                    data-toggle="dropdown"
+                  >
+                    پایه نگهدارنده گوشی
+                  </router-link>
                 </li>
               </ul>
             </div>

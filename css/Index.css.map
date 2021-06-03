@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../src/assets/scss/pages/Index.scss"
+    ],
+    "names": [],
+    "file": "Index.css"
+}

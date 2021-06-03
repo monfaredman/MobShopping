@@ -1,18 +1,23 @@
 <template>
   <div class="Bestselling-section">
     <div class="Bestselling-title">
-      <p>پرفروش ترین محصولات</p>
-      <img class="img-fluid" src="../../assets/Image/bestsell.png" alt="" />
+      <div class="Bestselling-title-in">
+        <p>پرفروش ترین محصولات</p>
+        <img class="img-fluid" src="../../assets/Image/bestsell.png" alt="" />
+      </div>
     </div>
     <div class="Bestselling-cards">
-      <div v-for="item in 6" :key="item" class="card">
+      <div
+        v-for="item in 6"
+        :key="item"
+        class="card col-6 col-sm-3 col-md-3 col-lg-2 col-xl-2"
+      >
         <div class="card-header">
-          <a href=""
-            ><img
-              class="card-img img-fluid "
-              src="../../assets/Image/img-22.jpg"
-              alt=""
-          /></a>
+          <img
+            class="card-img img-fluid "
+            src="../../assets/Image/img-22.jpg"
+            alt=""
+          />
         </div>
         <div class="card-body">
           <h6>

@@ -1,0 +1,60 @@
+//start AppSection6
+div.carousel-multi-item {
+  background-color: #b8aecf57;
+  width: 85%;
+  margin: 20px auto;
+  border-radius: 12px;
+  text-align: center;
+  font-family: "Bebas Neue", cursive;
+  .controls-top {
+    a.first-control {
+      font-size: 35px;
+      position: relative;
+      top: 87px;
+      right: 609px;
+    }
+
+    a.second-control {
+      position: absolute;
+      top: 87px;
+      left: 1173px;
+      font-size: 35px;
+    }
+  }
+  .carousel-indicators {
+    margin: 13px auto;
+    padding: 0px;
+    li {
+      background-color: #bcb2b269;
+      margin: 0px 5px;
+    }
+  }
+  .carousel-inner {
+    margin: -3px 0px;
+    position: relative;
+    width: 100%;
+    top: -9px;
+    overflow: hidden;
+    .row-item {
+      display: flex;
+      justify-content: center;
+      .col-item {
+        margin: 20px 33px;
+        top: -20px;
+        position: relative;
+        width: 20%;
+        border-radius: 50%;
+        background-color: white;
+      }
+      img {
+        position: relative;
+        top: 0px;
+        margin: auto;
+        width: 73%;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+//end AppSection6

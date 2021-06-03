@@ -1,0 +1,48 @@
+//start AppSection8
+div.newest-section {
+  @include section-name();
+  .newest-title {
+    @include section-title();
+    .section-title-in {
+      @include section-title-in();
+      p {
+        @include section-p();
+      }
+      img {
+        @include section-img();
+      }
+    }
+  }
+  .newest-cards {
+    @include section-cards();
+    padding: 0px 42px;
+    .card {
+      @include section-card();
+
+      .card-header {
+        @include section-card-header();
+        img {
+          @include card-img();
+        }
+      }
+      .card-body {
+        @include section-card-body($nowrap);
+        h6 {
+          @include section-h6();
+        }
+      }
+      .card-footer {
+        @include section-card-footer();
+        width: 100%;
+        padding: 10px 0px;
+        h5 {
+          @include section-h5();
+        }
+      }
+    }
+  }
+}
+.card:hover {
+  @include card-hover();
+}
+//end AppSection8

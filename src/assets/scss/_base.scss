@@ -1,35 +1,47 @@
+/* reset، متغیرها، میکسین ها، و کلاس های کلی */
 
 $color-one: rgb(150, 214, 214);
 $color-two: rgb(161, 175, 175);
 $color-three: rgb(155, 165, 165);
-$color-four: rgb(7, 43, 43);
+$color-four: rgb(78, 150, 150);
 $color-five: rgb(0, 0, 0);
 
 @mixin section-name() {
   margin: 20px auto;
   width: 100%;
-  background-color: #f8f8fa;
+  background-color: #b8aecf57;
   padding-bottom: 27px;
 }
 @mixin section-title() {
-  background-color: #f8f8fa;
-  width: 90%;
+  width: 82%;
   text-align: center;
-  border-top: 2px solid #e2e0e0;
+  border-top: 2px solid #bfbebeab;
   margin: auto;
   padding-top: 25px;
   padding-bottom: 10px;
 }
+@mixin section-title-in() {
+  width: 24%;
+  margin: auto;
+  border-radius: 4px;
+  background: #e7e3ef;
+  box-shadow: 20px 20px 60px #bebebecc, -20px -20px 60px #ffffff;
+}
 @mixin section-p() {
   display: inline-block;
-  font-size: 19px;
+  font-size: 31px;
   font-weight: 700;
+  letter-spacing: 1px;
+  font-weight: 700;
+  margin: auto;
+  padding: 7px;
+  word-spacing: -5px;
   color: black;
+  font-family: "Scheherazade";
 }
 @mixin section-img() {
   width: 63px;
   height: 62px;
-  margin: auto 10px auto auto;
   transform: rotate(44deg);
 }
 @mixin section-cards() {
@@ -37,53 +49,53 @@ $color-five: rgb(0, 0, 0);
   justify-content: center;
   margin: auto auto;
   width: 95%;
-  background-color: #f8f8fa;
 }
 @mixin section-card() {
-  border: 2px solid #eff1f2;
+  border: 2px solid #dbdbdbcf;
   margin: 10px 10px;
   border-radius: 10px;
-  top: 0px;
-  position: relative;
 }
 @mixin section-card-header() {
-  background-color: #d7d7d7;
+  background-color: #ffffff;
   padding: 0px;
-  margin-bottom: 10px;
   text-align: center;
   border: 2px solid white;
   border-radius: 10px 10px 0px 0px;
 }
+@mixin card-img() {
+  padding: 6px;
+}
 @mixin section-card-body($whiteSpace) {
-  border-top: 1px solid #e4e4e4;
+  border-top: 1px solid rgba(239, 167, 253, 0.53);
   background-color: #ffffff;
-  white-space: $whiteSpace;
+  white-space: nowrap;
   padding: 12px 0px;
   width: 85%;
   margin: auto;
   border-radius: 0px;
 }
 @mixin section-h6() {
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 400;
-  color: #7d7d6f;
-  font-family: "Font Awesome 5 Brands";
+  color: #0000009e;
   margin: auto auto;
   text-align: center;
-
+  white-space: normal;
 }
 @mixin section-card-footer() {
-  background-color: #ffffff;
-  padding: 20px 0px;
-  border-top: 1px solid #e8dcdc;
-  border-radius: 0px;
-  width: 85%;
+  padding: 0.75rem 1.25rem;
   margin: auto;
+  white-space: nowrap;
+  border-top: 1px solid rgba(239, 167, 253, 0.53);
+  width: 85%;
+  background-color: white !important;
 }
 @mixin section-h5() {
-  color: black;
-  font-size: 19px;
-  font-weight: 600;
+  font-size: 20px;
+  font-weight: 500;
+  word-spacing: 4px;
+  color: #771717;
+  letter-spacing: -1px;
   text-align: center;
 }
 @mixin card-hover() {

@@ -1,11 +1,17 @@
 <template>
   <div class="bag-section">
     <div class="bag-title">
-      <p>کیف و کاور گوشی</p>
-      <img class="img-fluid" src="../../assets/Image/shopping-bag.png" alt="" />
+      <div class="section-title-in">
+        <p class="top-card ">کیف،کاور و گلس</p>
+        <img class="new-img" src="../../assets/Image/shopping-bag.png" alt="" />
+      </div>
     </div>
     <div class="bag-cards">
-      <div v-for="item in 4" :key="item" class="card">
+      <div
+        v-for="item in 5"
+        :key="item"
+        class="card  col-6 col-sm-3 col-md-3 col-lg-2 col-xl-2"
+      >
         <div class="card-header">
           <a href=""
             ><img

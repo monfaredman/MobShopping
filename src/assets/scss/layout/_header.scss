@@ -1,0 +1,126 @@
+div.brand-header {
+  width: 126px;
+  margin: auto auto;
+  a.router-brand:hover {
+    color: #582727b8 !important;
+  }
+  a.router-brand {
+    color: #582727b8;
+  }
+  li {
+    font-size: 127px;
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+    margin: -20px auto;
+    a {
+      text-decoration: none;
+    }
+  }
+  h5 {
+    color: #ffffff;
+    text-align: center;
+    margin: 0px auto;
+    display: inline-block;
+    position: absolute;
+    font-size: 18px;
+    right: 40px;
+    letter-spacing: 1px;
+    top: 29px;
+    font-family: "Pattaya";
+  }
+}
+
+div.menue-header {
+  width: 205px;
+  margin: auto;
+  .nav-item-mobile {
+    border-left: 1px solid #0000001f;
+    margin: 0px 0px -8px 8px;
+    white-space: nowrap;
+    a.dropdown-toggle {
+      font-size: 22px !important;
+      font-weight: 900 !important;
+      text-decoration: none;
+      color: black;
+    }
+    .dropdown-menu {
+      top: 79%;
+      left: -62px;
+      min-width: 65px;
+      padding: 3px;
+      margin: 0px 0px 0px;
+      font-size: 0rem;
+      color: #212529;
+      text-align: center;
+      list-style: none;
+      background-color: #a0c8f0a3;
+      border: 1px solid #d7d7d7;
+      border-radius: 0.25rem;
+
+      a.nav-link {
+        width: 62px !important;
+        font-size: 14px !important;
+        font-weight: 100;
+        text-align: center !important;
+        height: 33px !important;
+        margin: auto auto !important;
+        line-height: 25px;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .nav-item-janebi {
+    margin: auto -6px;
+    padding: 0px 0px;
+    white-space: nowrap;
+
+    a.dropdown-toggle2 {
+      font-size: 22px !important;
+      text-decoration: none;
+      font-weight: 900 !important;
+      color: black;
+    }
+
+    .dropdown-menu2 {
+      top: 104%;
+      left: -42px;
+      min-width: 149px;
+      padding: 3px;
+      margin: 0px 0px 0px;
+      color: #212529;
+      text-align: center;
+      list-style: none;
+      background-color: #a0c8f0a3;
+      border: 1px solid #d7d7d7;
+      border-radius: 0.25rem;
+    }
+    a {
+      width: 136px !important;
+      font-size: 14px;
+      font-weight: 100;
+      text-align: center !important;
+      height: 33px !important;
+      margin: 0px auto !important;
+      line-height: 25px;
+      text-decoration: none;
+    }
+  }
+}
+
+div.social-header a {
+  font-size: 12px !important;
+  color: #9648dfde !important;
+}
+.fa-instagram:hover,
+.fa-telegram:hover,
+.fa-twitter:hover,
+.fa-whatsapp:hover {
+  color: #b23030;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+// end header

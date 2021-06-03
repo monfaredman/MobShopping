@@ -27,7 +27,7 @@
       <li
         data-target="#multi-item-example"
         data-slide-to="0"
-        class="active"
+        class="active  mr-5"
       ></li>
       <li data-target="#multi-item-example" data-slide-to="1"></li>
     </ol>
@@ -37,59 +37,35 @@
     <div class="carousel-inner" role="listbox">
       <!--First slide-->
       <div class="carousel-item active">
-        <div class="row">
-          <div class="col-md-4">
-            <img
-              class="img-fluid"
-              src="../../assets/Image/img-14.png"
-              alt="Card image cap"
-            />
+        <div class="row-item">
+          <div class="col-item">
+            <img src="../../assets/Image/img-14.png" alt="Card image cap" />
           </div>
 
-          <div class="col-md-4">
-            <img
-              class="img-fluid"
-              src="../../assets/Image/img-14.png"
-              alt="Card image cap"
-            />
+          <div class="col-item">
+            <img src="../../assets/Image/img-14.png" alt="Card image cap" />
           </div>
 
-          <div class="col-md-4">
-            <img
-              class="img-fluid"
-              src="../../assets/Image/img-14.png"
-              alt="Card image cap"
-            />
+          <div class="col-item">
+            <img src="../../assets/Image/img-14.png" alt="Card image cap" />
           </div>
         </div>
       </div>
       <!--/.First slide-->
 
       <!--Second slide-->
-      <div class="carousel-item">
-        <div class="row">
-          <div class="col-md-4">
-            <img
-              class="img-fluid"
-              src="../../assets/Image/img-14.png"
-              alt="Card image cap"
-            />
+      <div class="carousel-item ">
+        <div class="row-item">
+          <div class="col-item">
+            <img src="../../assets/Image/img-14.png" alt="Card image cap" />
           </div>
 
-          <div class="col-md-4">
-            <img
-              class="img-fluid"
-              src="../../assets/Image/img-14.png"
-              alt="Card image cap"
-            />
+          <div class="col-item">
+            <img src="../../assets/Image/img-14.png" alt="Card image cap" />
           </div>
 
-          <div class="col-md-4">
-            <img
-              class="img-fluid"
-              src="../../assets/Image/img-14.png"
-              alt="Card image cap"
-            />
+          <div class="col-item">
+            <img src="../../assets/Image/img-14.png" alt="Card image cap" />
           </div>
         </div>
       </div>

@@ -1,0 +1,51 @@
+//start AppSection4
+div.H-section {
+  @include section-name();
+  .H-title {
+    @include section-title();
+    .H-title-in {
+      @include section-title-in();
+      width: 27%;
+      p {
+        @include section-p();
+      }
+      img {
+        @include section-img();
+        transform: none;
+      }
+    }
+  }
+  .H-cards {
+    @include section-cards();
+    padding: 0px 42px;
+    .card {
+      @include section-card();
+      .card-header {
+        @include section-card-header();
+        img {
+          @include card-img();
+        }
+      }
+      .card-body {
+        @include section-card-body($nowrap);
+        h6 {
+          @include section-h6();
+        }
+      }
+      .card-footer {
+        @include section-card-footer();
+        width: 100%;
+        padding: 10px 0px;
+
+        h5 {
+          @include section-h5();
+        }
+      }
+    }
+  }
+}
+.card:hover {
+  @include card-hover();
+}
+
+//end AppSection4

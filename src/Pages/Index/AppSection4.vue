@@ -1,18 +1,23 @@
 <template>
   <div class="H-section">
     <div class="H-title">
-      <p>هدفون،هدست وهندزفری</p>
-      <img class="img-fluid" src="../../assets/Image/charger.png" alt="" />
+      <div class="H-title-in">
+        <p>هدفون،هدست وهندزفری</p>
+        <img class="img-fluid" src="../../assets/Image/charger.png" alt="" />
+      </div>
     </div>
     <div class="H-cards">
-      <div v-for="item in 5" :key="item" class="card">
+      <div
+        v-for="item in 5"
+        :key="item"
+        class="card col-6 col-sm-3 col-md-3 col-lg-2 col-xl-2"
+      >
         <div class="card-header">
-          <a href=""
-            ><img
-              class="card-img img-fluid "
-              src="../../assets/Image/img-31.jpg"
-              alt=""
-          /></a>
+          <img
+            class="card-img img-fluid "
+            src="../../assets/Image/img-31.jpg"
+            alt=""
+          />
         </div>
         <div class="card-body">
           <h6>

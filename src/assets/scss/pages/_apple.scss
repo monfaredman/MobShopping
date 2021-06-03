@@ -1,0 +1,79 @@
+//start AppMobile
+
+div.AppMobile {
+  @include section-name();
+  margin: -98px auto;
+  .AppMobile-title {
+    margin: 98px auto 0px auto;
+    width: 61%;
+    p {
+      @include section-p();
+    }
+    img {
+      @include section-img();
+    }
+  }
+  .AppMobile-cards {
+    @include section-cards();
+    flex-wrap: wrap;
+    .card {
+      @include section-card();
+      width: 16%;
+      .card-header {
+        @include section-card-header();
+      }
+      .card-body {
+        @include section-card-body($wrap);
+        padding: 11px;
+        h6 {
+          @include section-h6();
+          font-size: 13px;
+        }
+      }
+      .card-footer {
+        @include section-card-footer();
+        padding: 6px 0px;
+
+        h5 {
+          @include section-h5();
+          font-size: 17px;
+        }
+      }
+    }
+  }
+  .wrapper {
+    margin-bottom: -35px;
+  }
+}
+.card:hover {
+  @include card-hover();
+}
+
+//start Pagintion
+.wrapper {
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  margin-bottom: -46px;
+  align-items: center;
+  .page-link {
+    position: relative;
+    display: block;
+    color: #673ab7 !important;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #673ab7 !important;
+  }
+  .page-link:hover {
+    z-index: 2;
+    color: #fff !important;
+    background-color: #673ab7;
+    border-color: #024dbc;
+  }
+  .page-link:focus {
+    z-index: 3;
+    outline: 0;
+    box-shadow: none;
+  }
+}
+//end Pagintion

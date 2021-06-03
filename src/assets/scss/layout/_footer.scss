@@ -1,0 +1,102 @@
+//start AppFooter
+
+footer {
+  border-top: 2px solid #c592b7;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 1000px #eab1ff59;
+  width: 100%;
+  margin: 98px 0 0 0;
+  background-image: url(../src/assets/Image/wave.svg);
+  .top-section-footer {
+    display: flex;
+    width: 90%;
+    margin: -23px auto;
+    padding: 0px 0px;
+    justify-content: space-around;
+    .footer-item-1 {
+      margin: auto;
+      a {
+        a.acount-btn {
+          font-family: "Scheherazade";
+          font-size: 25px;
+        }
+      }
+      a {
+        font-size: 11px;
+      }
+    }
+  }
+  .footer-item-2 {
+    margin: 15px auto;
+    ul {
+      list-style: none;
+      text-align: right;
+      line-height: 25px;
+      padding: 17px 0px;
+      margin: 0;
+      h4 {
+        font-size: 21px;
+        opacity: 0.7;
+      }
+      li {
+        font-size: 14px;
+        font-weight: 400;
+      }
+    }
+  }
+  .footer-item-3 {
+    margin: auto auto;
+    ul {
+      list-style: none;
+      text-align: right;
+      line-height: 25px;
+      margin: 0;
+      h4 {
+        font-size: 21px;
+        opacity: 0.7;
+      }
+      li {
+        font-size: 14px;
+        font-weight: 400;
+        a {
+          color: #9648dfde;
+        }
+      }
+    }
+  }
+}
+.button-section-footer {
+  display: flex;
+  display: flex;
+  justify-content: space-between;
+
+  .footer-item-1 {
+    margin: 43px 32px 0px 0px;
+    align-items: center;
+    height: 80px;
+    p {
+      text-align: right;
+      color: #dba223;
+      font-size: 16px;
+    }
+    h5 {
+      text-align: right;
+      color: #000303;
+      font-size: 13px;
+      font-weight: 400;
+      opacity: 0.7;
+    }
+  }
+
+  .footer-item-2 {
+    margin: 14px 32px 0px 2px;
+    align-items: center;
+    height: 80px;
+    img {
+      width: 22%;
+    }
+  }
+}
+
+//end AppFooter

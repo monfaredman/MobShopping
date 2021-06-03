@@ -1,18 +1,1301 @@
+/* کلاس هایی که چیدمان لی اوت  ( container  سیستم گریدبندی) */
+
+@import "components";
+@import "layout/section1";
+@import "base";
+
 // Start Header
-div.header{
+div.header {
   width: 100%;
-  position: fixed;
-  // background-color: #ffffff;
-  background: rgb(255,255,255);
-background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(214,105,255,1) 100%);
+  position: sticky;
+  background: linear-gradient(90deg, white 0%, #d669ff 100%);
   z-index: 100;
   border-bottom: 2px solid #9648dfde;
   top: 0px;
-  nav{
+
+  nav {
     width: 89%;
     height: 81px;
     right: 88px;
   }
 }
 
-// End Header
+@media only screen and (min-width: 1200px) {
+  div.header {
+    max-width: 100%;
+    nav {
+      .navbar-collapse {
+        .menue-header {
+          margin: auto;
+          .navbar-nav {
+            .nav-item-janebi {
+              border-left: none !important;
+              padding: 3px 0px !important;
+              margin: 1px -10px !important;
+            }
+            .nav-item {
+              border-left: 1px solid #0000001f;
+              white-space: nowrap;
+              align-items: center;
+              padding: 0px 15px;
+              height: 29px;
+              margin: 0px 0px;
+              a.first-link {
+                font-family: "Scheherazade" !important;
+                position: relative !important;
+                top: -10px !important;
+                font-weight: 700 !important;
+                font-size: 22px;
+                word-spacing: -7px;
+                color: black !important;
+                letter-spacing: 2px !important;
+              }
+              .dropdown-toggle::after {
+                content: "";
+                border-top: 0.3em solid;
+                border-right: 0.3em solid transparent;
+                border-bottom: 0;
+                border-left: 0.3em solid transparent;
+                font-size: 10px;
+                color: #771717;
+                position: absolute;
+                top: 19px;
+              }
+              .dropdown-menu {
+                top: 32px;
+                left: 7px;
+                min-width: 68px;
+                padding: 1px;
+
+                color: #212529;
+
+                background-color: #ffffff;
+                border: 1px solid #ffffff;
+                border-radius: 0px;
+                .dropdown-item {
+                  padding: 5px 8px;
+
+                  a.second-link {
+                    color: #9648df !important;
+                    font-weight: 700;
+                    font-size: 13px !important;
+                    padding: 0 !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  div.header {
+    max-width: 100%;
+    nav {
+      .navbar-collapse {
+        .menue-header {
+          margin: auto;
+          .navbar-nav {
+            .nav-item-janebi {
+              border-left: none !important;
+              padding: 3px 0px !important;
+              margin: 1px -10px !important;
+            }
+            .nav-item {
+              border-left: 1px solid #0000001f;
+              white-space: nowrap;
+              align-items: center;
+              padding: 0px 15px;
+              height: 29px;
+              margin: 0px 0px;
+              a.first-link {
+                font-family: "Scheherazade" !important;
+                position: relative !important;
+                top: -10px !important;
+                font-weight: 700 !important;
+                font-size: 22px;
+                word-spacing: -7px;
+                color: black !important;
+                letter-spacing: 2px !important;
+              }
+              .dropdown-toggle::after {
+                content: "";
+                border-top: 0.3em solid;
+                border-right: 0.3em solid transparent;
+                border-bottom: 0;
+                border-left: 0.3em solid transparent;
+                font-size: 10px;
+                color: #771717;
+                position: absolute;
+                top: 19px;
+              }
+              .dropdown-menu {
+                top: 32px;
+                left: 7px;
+                min-width: 68px;
+                padding: 1px;
+
+                color: #212529;
+
+                background-color: #ffffff;
+                border: 1px solid #ffffff;
+                border-radius: 0px;
+                .dropdown-item {
+                  padding: 5px 8px;
+
+                  a.second-link {
+                    color: #9648df !important;
+                    font-weight: 700;
+                    font-size: 13px !important;
+                    padding: 0 !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  div.newest-section {
+    .newest-title {
+      .section-title-in {
+        width: 26%;
+        p {
+          font-size: 21px;
+        }
+        img {
+        }
+      }
+    }
+    .newest-cards {
+      .card {
+        .card-header {
+          img {
+          }
+        }
+        .card-body {
+          h6 {
+          }
+        }
+        .card-footer {
+          h5 {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+
+  div.bag-section {
+    .bag-title {
+      .section-title-in {
+        width: 26%;
+        p {
+          font-size: 21px;
+        }
+        img {
+          transform: none;
+        }
+      }
+    }
+    .bag-cards {
+      .card {
+        .card-header {
+        }
+        .card-body {
+          h6 {
+          }
+        }
+        .card-footer {
+          font-size: 13px;
+          h5 {
+          }
+        }
+      }
+    }
+  }
+
+  div.carousel-multi-item {
+    .controls-top {
+      a.first-control {
+        position: unset;
+        font-size: 35px;
+        i {
+          position: absolute;
+          left: -38px;
+          top: 59px;
+        }
+      }
+
+      a.second-control {
+        position: unset;
+        i {
+          position: absolute;
+          right: -35px;
+          top: 59px;
+        }
+      }
+    }
+    .carousel-indicators {
+      li {
+        position: absolute;
+        top: -5px;
+      }
+    }
+    .carousel-inner {
+      .row-item {
+        .col-item {
+          top: -8px;
+        }
+        img {
+        }
+      }
+    }
+  }
+
+  div.H-section {
+    .H-title {
+      .H-title-in {
+        width: 30%;
+        p {
+          font-size: 21px;
+        }
+        img {
+          transform: none;
+        }
+      }
+    }
+    .H-cards {
+      .card {
+        .card-header {
+          img {
+          }
+        }
+        .card-body {
+          h6 {
+          }
+        }
+        .card-footer {
+          font-size: 13px;
+          h5 {
+          }
+        }
+      }
+    }
+  }
+  div.Bestselling-section {
+    .Bestselling-title {
+      .Bestselling-title-in {
+        width: 26%;
+        p {
+          font-size: 21px;
+        }
+        img {
+        }
+      }
+    }
+    .Bestselling-cards {
+      .card {
+        .card-header {
+          img {
+          }
+        }
+
+        .card-body {
+          h6 {
+          }
+        }
+        .card-footer {
+          h5 {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+  div.question-section {
+    .question-item {
+      padding: 0;
+      .question-icon {
+      }
+      h3 {
+      }
+      h5 {
+      }
+    }
+  }
+
+  div.AppMobile {
+    .AppMobile-title {
+      width: 75%;
+      p {
+      }
+      img {
+      }
+    }
+    .AppMobile-cards {
+      .card {
+        .card-header {
+        }
+        .card-body {
+          h6 {
+          }
+        }
+        .card-footer {
+          h5 {
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  div.header {
+    max-width: 100%;
+    nav {
+      .navbar-collapse {
+        .menue-header {
+          margin: auto;
+          .navbar-nav {
+            .nav-item-janebi {
+              border-left: none !important;
+              padding: 3px 0px !important;
+              margin: 1px -10px !important;
+            }
+            .nav-item {
+              border-left: 1px solid #0000001f;
+              white-space: nowrap;
+              align-items: center;
+              padding: 0px 15px;
+              height: 29px;
+              margin: 0px 0px;
+              a.first-link {
+                font-family: "Scheherazade" !important;
+                position: relative !important;
+                top: -10px !important;
+                font-weight: 700 !important;
+                font-size: 22px;
+                word-spacing: -7px;
+                color: black !important;
+                letter-spacing: 2px !important;
+              }
+              .dropdown-toggle::after {
+                content: "";
+                border-top: 0.3em solid;
+                border-right: 0.3em solid transparent;
+                border-bottom: 0;
+                border-left: 0.3em solid transparent;
+                font-size: 10px;
+                color: #771717;
+                position: absolute;
+                top: 19px;
+              }
+              .dropdown-menu {
+                top: 32px;
+                left: 7px;
+                min-width: 68px;
+                padding: 1px;
+
+                color: #212529;
+
+                background-color: #ffffff;
+                border: 1px solid #ffffff;
+                border-radius: 0px;
+                .dropdown-item {
+                  padding: 5px 8px;
+
+                  a.second-link {
+                    color: #9648df !important;
+                    font-weight: 700;
+                    font-size: 13px !important;
+                    padding: 0 !important;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  div.newest-section {
+    .newest-title {
+      .section-title-in {
+        width: 25%;
+        p {
+          font-size: 15px;
+        }
+        img {
+          width: 40px;
+          height: 39px;
+        }
+      }
+    }
+    .newest-cards {
+      padding: 0px 42px;
+      overflow: auto;
+      .card {
+        .card-header {
+          img {
+          }
+        }
+        .card-body {
+          h6 {
+            font-size: 10px;
+          }
+        }
+        .card-footer {
+          h5 {
+            font-size: 9px;
+          }
+        }
+      }
+    }
+  }
+
+  div.bag-section {
+    .bag-title {
+      .section-title-in {
+        width: 33%;
+        p {
+          font-size: 21px;
+        }
+        img {
+          transform: none;
+        }
+      }
+    }
+    .bag-cards {
+      padding: 0px 42px;
+      overflow: auto;
+      justify-content: end;
+      .card {
+        .card-header {
+        }
+        .card-body {
+          h6 {
+            font-size: 10px;
+          }
+        }
+        .card-footer {
+          font-size: 13px;
+          h5 {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  div.H-section {
+    .H-title {
+      .H-title-in {
+        width: 33%;
+        p {
+          font-size: 21px;
+        }
+        img {
+          width: 44px;
+          height: 33px;
+        }
+      }
+    }
+    .H-cards {
+      padding: 0px 42px;
+      overflow: auto;
+      justify-content: end;
+      .card {
+        .card-header {
+          img {
+          }
+        }
+        .card-body {
+          h6 {
+            font-size: 10px;
+          }
+        }
+        .card-footer {
+          font-size: 13px;
+          h5 {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  div.Bestselling-section {
+    .Bestselling-title {
+      .Bestselling-title-in {
+        width: 25%;
+        p {
+          font-size: 15px;
+        }
+        img {
+          width: 40px;
+          height: 39px;
+        }
+      }
+    }
+    .Bestselling-cards {
+      overflow: auto;
+      .card {
+        .card-header {
+          img {
+          }
+        }
+
+        .card-body {
+          h6 {
+            font-size: 10px;
+          }
+        }
+        .card-footer {
+          h5 {
+            font-size: 9px;
+          }
+        }
+      }
+    }
+  }
+  div.question-section {
+    .question-item {
+      padding: 0;
+      h3 {
+        font-size: 22px;
+      }
+      h5 {
+        font-size: 18px;
+      }
+      .question-icon {
+        font-size: 4rem;
+      }
+    }
+  }
+  footer {
+    .top-section-footer {
+      .footer-item-1 {
+        a {
+          padding: 5px;
+          a.acount-btn {
+            font-size: 15px;
+          }
+        }
+        a {
+          font-size: 11px;
+        }
+      }
+    }
+    .footer-item-2 {
+      ul {
+        h4 {
+          font-size: 15px !important;
+        }
+        li {
+          font-size: 12px;
+        }
+      }
+    }
+    .footer-item-3 {
+      ul {
+        h4 {
+          font-size: 15px;
+        }
+        li {
+          a {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+  .button-section-footer {
+    .footer-item-1 {
+      p {
+        font-size: 11px;
+      }
+      h5 {
+        font-size: 9px;
+      }
+    }
+
+    .footer-item-2 {
+      margin: 14px 0px 0px -3px;
+      img {
+        width: 19%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .header {
+    nav {
+      max-width: 100%;
+      .brand-header {
+        a {
+          li {
+            position: absolute;
+            top: 7px;
+            right: 14px;
+          }
+        }
+      }
+      .navbar-toggler {
+        position: absolute;
+        left: 32px;
+        font-size: 31px;
+        span {
+          i {
+          }
+        }
+      }
+
+      div.social-header {
+        position: absolute;
+        left: 8px;
+        top: 30px;
+        display: none;
+      }
+
+      div.navbar-collapse {
+        position: absolute;
+        transform: none;
+        z-index: 10000000;
+        top: 81px;
+        left: 0;
+        div.menue-header {
+          direction: ltr;
+          background-color: #ffffff;
+          border-radius: 0px 5px 5px 0px;
+          text-align: center;
+          .navbar-nav {
+            .nav-item-janebi {
+              margin: 0px auto 228px auto !important;
+            }
+            .nav-item {
+              a.first-link {
+                font-family: "Scheherazade";
+                padding: 16px 0px !important;
+                font-size: 23px !important;
+                font-weight: 700 !important;
+                color: rgb(0, 0, 0) !important;
+                letter-spacing: 2px !important;
+              }
+              .dropdown-menu {
+                top: 22px;
+                left: 139px;
+                min-width: 90px;
+                padding: 0;
+                position: absolute;
+                background-color: white;
+                .dropdown-item {
+                  padding: 7px 0;
+
+                  a.second-link {
+                    font-size: 14px;
+                    color: #9648df;
+                    font-weight: 700;
+                    padding: 0;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  div.carousel {
+    .carousel-inner {
+      .carousel-item {
+        .carousel-caption {
+          a {
+            h4 {
+              font-size: 18px !important;
+            }
+            p.text-light {
+              font-size: 13px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  div.section1 {
+    .boxing-section1 {
+      ul {
+        background-color: #b8aecf57;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0px;
+      }
+    }
+  }
+  div.newest-section {
+    .newest-title {
+      .section-title-in {
+        width: 25%;
+        p {
+          font-size: 15px;
+        }
+        img {
+          width: 40px;
+          height: 39px;
+        }
+      }
+    }
+    .newest-cards {
+      padding: 0px 42px;
+      overflow: auto;
+      .card {
+        .card-header {
+          img {
+          }
+        }
+        .card-body {
+          h6 {
+            font-size: 10px;
+          }
+        }
+        .card-footer {
+          h5 {
+            font-size: 9px;
+          }
+        }
+      }
+    }
+  }
+  div.bag-section {
+    .bag-title {
+      .section-title-in {
+        width: 30%;
+        p {
+          font-size: 15px;
+        }
+        img {
+          width: 40px;
+          height: 39px;
+        }
+      }
+    }
+    .bag-cards {
+      padding: 0px 42px;
+      overflow: auto;
+      justify-content: end;
+      .card {
+        .card-header {
+        }
+        .card-body {
+          h6 {
+            font-size: 10px;
+          }
+        }
+        .card-footer {
+          h5 {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+  div.carousel-multi-item {
+    .controls-top {
+      a.first-control {
+        position: unset;
+        font-size: 20px;
+        i {
+          position: absolute;
+          left: -38px;
+          top: 30px;
+        }
+      }
+
+      a.second-control {
+        position: unset;
+        font-size: 20px;
+        i {
+          position: absolute;
+          right: -35px;
+          top: 30px;
+        }
+      }
+    }
+    .carousel-indicators {
+      li {
+        position: absolute;
+        top: -5px;
+      }
+    }
+    .carousel-inner {
+      .row-item {
+        .col-item {
+          top: -8px;
+        }
+        img {
+        }
+      }
+    }
+  }
+  div.H-section {
+    .H-title {
+      .H-title-in {
+        width: 34%;
+        p {
+          font-size: 15px;
+        }
+        img {
+          width: 30px;
+          height: 24px;
+        }
+      }
+    }
+    .H-cards {
+      padding: 0px 42px;
+      overflow: auto;
+      justify-content: end;
+      .card {
+        .card-header {
+          img {
+          }
+        }
+        .card-body {
+          h6 {
+            font-size: 10px;
+          }
+        }
+        .card-footer {
+          font-size: 13px;
+          h5 {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+  div.Bestselling-section {
+    .Bestselling-title {
+      .Bestselling-title-in {
+        width: 34%;
+        p {
+          font-size: 15px;
+        }
+        img {
+          width: 40px;
+          height: 39px;
+        }
+      }
+    }
+    .Bestselling-cards {
+      overflow: auto;
+      .card {
+        .card-header {
+          img {
+          }
+        }
+
+        .card-body {
+          h6 {
+            font-size: 10px;
+          }
+        }
+        .card-footer {
+          h5 {
+            font-size: 9px;
+          }
+        }
+      }
+    }
+  }
+  div.question-section {
+    .question-item {
+      padding: 0;
+      h3 {
+        font-size: 18px;
+      }
+      h5 {
+        font-size: 13px;
+      }
+      .question-icon {
+        font-size: 3rem;
+      }
+    }
+  }
+  footer {
+    .top-section-footer {
+      .footer-item-1 {
+        a {
+          padding: 5px;
+          a.acount-btn {
+            font-size: 15px;
+          }
+        }
+        a {
+          font-size: 11px;
+        }
+      }
+    }
+    .footer-item-2 {
+      ul {
+        h4 {
+          font-size: 14px !important;
+          white-space: nowrap;
+        }
+        li {
+          font-size: 12px;
+        }
+      }
+    }
+    .footer-item-3 {
+      ul {
+        h4 {
+          font-size: 14px;
+          white-space: nowrap;
+        }
+        li {
+          s a {
+            font-size: 12px;
+            white-space: nowrap;
+          }
+        }
+      }
+    }
+  }
+  .button-section-footer {
+    .footer-item-1 {
+      p {
+        font-size: 11px;
+        white-space: nowrap;
+      }
+      h5 {
+        font-size: 9px;
+        white-space: nowrap;
+      }
+    }
+
+    .footer-item-2 {
+      img {
+        width: 19%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .header {
+    max-width: 100%;
+  }
+  div.brand-header li {
+    position: absolute;
+    top: 7px;
+    right: 14px;
+  }
+  div.social-header {
+    position: absolute;
+    left: 8px;
+    top: 30px;
+  }
+  div.carousel .carousel-caption p.text-light {
+    font-size: 13px;
+  }
+  div.carousel {
+    .carousel-indicators {
+      li {
+        width: 6px !important;
+        height: 7px !important;
+      }
+    }
+
+    .carousel-inner {
+      .carousel-item {
+        .carousel-caption {
+          a {
+            h4 {
+              font-size: 13px !important;
+            }
+            p.text-light {
+              font-size: 10px !important;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  div.section1 {
+    .boxing-section1 {
+      ul {
+        background-color: #b8aecf57;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding: 0px;
+      }
+    }
+  }
+
+  div.newest-section {
+    max-width: 100%;
+    .newest-title {
+      .section-title-in {
+        width: 59%;
+        p {
+          font-size: 15px;
+        }
+        img {
+          width: 40px;
+          height: 39px;
+        }
+      }
+    }
+    .newest-cards {
+      padding: 0px 42px;
+      overflow: auto;
+      .card {
+        .card-header {
+          img {
+          }
+        }
+        .card-body {
+          h6 {
+            font-size: 10px;
+          }
+        }
+        .card-footer {
+          h5 {
+            font-size: 9px;
+          }
+        }
+      }
+    }
+  }
+
+  div.bag-section {
+    .bag-title {
+      .section-title-in {
+        width: 55%;
+        p {
+          font-size: 15px;
+        }
+        img {
+          width: 40px;
+          height: 39px;
+        }
+      }
+    }
+    .bag-cards {
+      padding: 0px 42px;
+      overflow: auto;
+      justify-content: end;
+      .card {
+        .card-header {
+        }
+        .card-body {
+          h6 {
+            font-size: 10px;
+          }
+        }
+        .card-footer {
+          h5 {
+            font-size: 9px;
+          }
+        }
+      }
+    }
+  }
+  div.carousel-multi-item {
+    .controls-top {
+      a.first-control {
+        position: unset;
+        font-size: 17px;
+        i {
+          position: absolute;
+          left: -24px;
+          top: 25px;
+        }
+      }
+
+      a.second-control {
+        position: unset;
+        font-size: 17px;
+        i {
+          position: absolute;
+          right: -23px;
+          top: 25px;
+        }
+      }
+      .carousel-indicators {
+        position: absolute;
+        right: 0;
+        bottom: 10px;
+        left: 0;
+        z-index: 15;
+        top: 52px;
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+        margin-right: 15%;
+        margin-left: 18%;
+        list-style: none;
+        li {
+          position: absolute;
+          top: -5px;
+        }
+      }
+      .carousel-inner {
+        .row-item {
+          .col-item {
+            top: 7px;
+          }
+          img {
+          }
+        }
+      }
+    }
+  }
+  div.H-section {
+    .H-title {
+      .H-title-in {
+        width: 58%;
+        p {
+          font-size: 15px;
+        }
+        img {
+          width: 22px;
+          height: 17px;
+        }
+      }
+    }
+    .H-cards {
+      padding: 0px 4px;
+      overflow: auto;
+      justify-content: end;
+      .card {
+        .card-header {
+          img {
+          }
+        }
+        .card-body {
+          h6 {
+            font-size: 10px;
+          }
+        }
+        .card-footer {
+          h5 {
+            font-size: 9px;
+          }
+        }
+      }
+    }
+  }
+  div.Bestselling-section {
+    .Bestselling-title {
+      .Bestselling-title-in {
+        width: 59%;
+        p {
+          font-size: 15px;
+        }
+        img {
+          width: 40px;
+          height: 39px;
+        }
+      }
+    }
+    .Bestselling-cards {
+      padding: 0px 42px;
+      overflow: auto;
+      .card {
+        .card-header {
+          img {
+          }
+        }
+
+        .card-body {
+          h6 {
+            font-size: 10px;
+          }
+        }
+        .card-footer {
+          h5 {
+            font-size: 9px;
+          }
+        }
+      }
+    }
+  }
+  div.question-section {
+    flex-wrap: wrap;
+    .question-item {
+      padding: 0;
+      .question-icon {
+      }
+      h3 {
+      }
+      h5 {
+      }
+    }
+  }
+  footer {
+    .top-section-footer {
+      .footer-item-1 {
+        a {
+          padding: 5px;
+          a.acount-btn {
+            font-size: 15px;
+          }
+        }
+        a {
+          font-size: 11px;
+        }
+      }
+    }
+    .footer-item-2 {
+      ul {
+        h4 {
+          font-size: 14px !important;
+          white-space: nowrap;
+        }
+        li {
+          font-size: 12px;
+        }
+      }
+    }
+    .footer-item-3 {
+      display: none;
+      ul {
+        h4 {
+        }
+        li {
+          s a {
+          }
+        }
+      }
+    }
+  }
+  .button-section-footer {
+    .footer-item-1 {
+      p {
+        font-size: 11px;
+        white-space: nowrap;
+      }
+      h5 {
+        font-size: 9px;
+        white-space: nowrap;
+      }
+    }
+
+    .footer-item-2 {
+      display: none;
+      img {
+      }
+    }
+  }
+}

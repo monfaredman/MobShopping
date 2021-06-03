@@ -20,7 +20,7 @@
             alt="First slide"
           />
         </a>
-        <div class="carousel-caption d-none d-md-block">
+        <div class="carousel-caption ">
           <router-link to="/mobile/apple/iphone12" id="link">
             <h4 class="text-light d-inline-block">Iphone 12 pro max</h4>
             <br />
@@ -35,9 +35,12 @@
           class="d-block w-100"
           alt="Second slide"
         />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Iphone 12 pro max</h5>
-          <p>سریع انفجار کن</p>
+        <div class="carousel-caption">
+          <router-link to="/mobile/apple/iphone12" id="link">
+            <h4 class="text-light d-inline-block">Iphone 12 pro max</h4>
+            <br />
+            <p class="text-light">سریع انفجار کن</p>
+          </router-link>
         </div>
       </div>
       <div class="carousel-item" alt="Third slide">
@@ -46,9 +49,12 @@
           class="d-block w-100 "
           alt="Third slide"
         />
-        <div class="carousel-caption d-none d-md-block">
-          <h5>Iphone 12 pro max</h5>
-          <p>سریع انفجار کن</p>
+        <div class="carousel-caption ">
+          <router-link to="/mobile/apple/iphone12" id="link">
+            <h4 class="text-light d-inline-block">Iphone 12 pro max</h4>
+            <br />
+            <p class="text-light">سریع انفجار کن</p>
+          </router-link>
         </div>
       </div>
     </div>

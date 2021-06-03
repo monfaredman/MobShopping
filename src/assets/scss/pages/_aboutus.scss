@@ -1,0 +1,79 @@
+//start aboutus
+.demo {
+  margin: 17px auto;
+  width: 100%;
+  .row {
+    background-color: #eaeaea87;
+    border-radius: 10px;
+    .about-box .pic {
+      width: 22%;
+      padding: 20px 0;
+      margin: 33px 6% 0 2%;
+      float: left;
+      position: relative;
+      z-index: 1;
+    }
+    .about-box .pic:before,
+    .about-box .pic:after {
+      content: "";
+      width: 130px;
+      height: 150px;
+      background: #e1c37d;
+      position: absolute;
+      z-index: -1;
+    }
+    .about-box .pic:before {
+      top: -19px;
+      right: -20px;
+    }
+    .about-box .pic:after {
+      bottom: -48px;
+      left: -20px;
+    }
+    .about-box .pic img {
+      width: 108%;
+      height: 309px;
+      border: 3px solid #08000826;
+    }
+
+    .about-box .title {
+      display: block;
+      font-size: 22px;
+      font-weight: 600;
+      color: #000;
+      margin: 0px;
+      text-transform: uppercase;
+      padding-top: 47px;
+      padding-left: 15px;
+      padding-bottom: 19px;
+    }
+
+    .about-box .description {
+      font-size: 16px;
+      color: #000;
+    }
+    .about-box .description:before,
+    .about-box .description:after {
+      // font-family: "Font Awesome 5 Free";
+      font-weight: 900;
+      font-size: 17px;
+      color: #e4af34;
+      position: relative;
+    }
+    .about-box .description:before {
+      content: "\f10d";
+      margin-right: 5px;
+      top: 0;
+      left: 0;
+    }
+    .about-box .description:after {
+      content: "\f10e";
+      margin-left: 5px;
+      position: relative;
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
+
+//end aboutus

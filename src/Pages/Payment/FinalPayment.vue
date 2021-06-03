@@ -12,7 +12,7 @@
           </div>
         </div>
         <div class="dolla flex-row">
-          <span class="amount">۲۰‍‍‍‍‍٬۰۰۰٬۰۰۰</span>
+          <span class="amount">{{ totalMoney }}</span>
           <span class="font-weight-bold">تومان</span>
         </div>
       </div>
@@ -49,18 +49,18 @@
 </template>
 <script>
 import axios from "axios";
+import { BusEvent } from "../../EventBus";
 export default {
-  created() {
-    let post = {
-      title: "foo",
-      body: "bar",
-      userId: 1
+  data() {
+    return {
+      totalMoney: ""
     };
-    axios
-      .post("https://6070339a85c3f0001746f9b5.mockapi.io/users", post)
-      .then(result => {
-        console.log(result);
-      });
+  },
+  created() {
+    EventBus.$on("totalMoneyProps", monetBus => {
+      this.totalMoney = monetBus;
+      console.log(this.totalMoney);
+    });
   },
   beforeRouteLeave(to, from, next) {
     const answer = window.confirm("Do you really want to leave?");

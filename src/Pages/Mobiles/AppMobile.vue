@@ -44,14 +44,30 @@
     <div class="wrapper">
       <nav aria-label="Page navigation example">
         <ul class="pagination">
-          <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+          <li class="page-item">
+            <a
+              class="page-link"
+              style="
+    border-radius: 0px 25px 25px 0px;"
+              href="#"
+              >Previous</a
+            >
+          </li>
           <li class="page-item"><a class="page-link" href="#">1</a></li>
           <li class="page-item"><a class="page-link" href="#">2</a></li>
           <li class="page-item"><a class="page-link" href="#">3</a></li>
           <li class="page-item"><a class="page-link" href="#">4</a></li>
           <li class="page-item"><a class="page-link" href="#">5</a></li>
           <li class="page-item"><a class="page-link" href="#">6</a></li>
-          <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          <li class="page-item">
+            <a
+              class="page-link"
+              style="
+    border-radius: 25px 0px 0px 25px;    margin-right: 0;"
+              href="#"
+              >Next</a
+            >
+          </li>
         </ul>
       </nav>
     </div>
@@ -66,34 +82,4 @@ export default {
 };
 </script>
 
-<style>
-.wrapper {
-  height: 20vh;
-  display: flex;
-  justify-content: center;
-  margin-bottom: -46px;
-  align-items: center;
-}
-
-.page-link {
-  position: relative;
-  display: block;
-  color: #673ab7 !important;
-  text-decoration: none;
-  background-color: #fff;
-  border: 1px solid #673ab7 !important;
-}
-
-.page-link:hover {
-  z-index: 2;
-  color: #fff !important;
-  background-color: #673ab7;
-  border-color: #024dbc;
-}
-
-.page-link:focus {
-  z-index: 3;
-  outline: 0;
-  box-shadow: none;
-}
-</style>
+<style></style>

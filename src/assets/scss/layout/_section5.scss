@@ -1,0 +1,32 @@
+//start AppSection5
+div.question-section {
+  display: flex;
+  justify-content: center;
+  .question-item {
+    background-size: cover;
+    padding: 17px 50px;
+    border: 1px solid #9648dfde;
+    background-repeat: round;
+    border-radius: 9px;
+    background-clip: border-box;
+    white-space: nowrap;
+    margin: 26px 36px;
+    .question-icon {
+      font-size: 6rem;
+      margin: 30px;
+      transition: all 0.5s ease-in-out;
+      color: #7c3f63;
+    }
+    h3 {
+      color: white;
+    }
+    h5 {
+      color: black;
+    }
+  }
+}
+.question-icon:hover {
+  transform: rotate(180deg);
+}
+
+//end AppSection5

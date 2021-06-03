@@ -1,22 +1,18 @@
-@import "_base";
-@import "_components";
-@import "_layout";
+// در این فایل تنها لینک import فایل های بالا قرار دارد.
 
-@font-face {
-  font-family: "samim","shabnam","AKavir";
-  src: url("/src/assets/Fonts/samim/Samim.eot") format("eot");
-  src: url("/src/assets/Fonts/samim/Samim.ttf") format("ttf");
-  src: url("/src/assets/Fonts/samim/Samim.woff") format("woff");
-  src: url("/src/assets/Fonts/shabnam/Shabnam.eot") format("eot");
-  src: url("/src/assets/Fonts/shabnam/Shabnam.ttf") format("ttf");
-  src: url("/src/assets/Fonts/shabnam/Shabnam.woff") format("woff");
-  src: url("/src/assets/Fonts/AKavir.ttf") format("ttf");
-}
-body{
-  background-color: rgb(255, 255, 255);
-  direction: rtl;
-  margin: 0px 0px;
-  padding: 0px 0px;
-  text-align:unset !important;
-}
-
+@import "base";
+@import "components";
+@import "./layout/header";
+@import "./layout/section1";
+@import "./layout/section8";
+@import "./layout/section2";
+@import "./layout/section6";
+@import "./layout/section3";
+@import "./layout/section4";
+@import "./layout/section5";
+@import "./layout/footer";
+@import "./pages/mobile";
+@import "./pages/apple";
+@import "./pages/iphone12";
+@import "./pages/aboutus";
+@import "layout";
